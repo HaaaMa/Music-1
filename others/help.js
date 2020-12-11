@@ -115,14 +115,11 @@ module.exports = {
             return
             }
             message.react(approveemoji);
-      /////      message.author.send(new MessageEmbed().setColor("#c219d8")
-        /////    .setDescription(`**👍 Sent from <#${message.channel.id}>**`))
-           //// message.channel.send(helpEmbed)
-           message.channel.send( new MessageEmbed().setColor("#c219d8")
+message.channel.send( new MessageEmbed().setColor("#c219d8")
            .setDescription(`**👍${message.author}Prefix:= Join a voice channel and ?play a song.
  Crated By (Mr.HaMa&EsOVip).**`)
+                      );
 message.channel.send(helpEmbed)
-            );
 
         break;
        }
