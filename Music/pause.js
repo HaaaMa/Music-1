@@ -5,7 +5,8 @@ const { attentionembed } = require("../util/attentionembed");
 const { PREFIX } = require(`../config.json`);
 module.exports = {
   name: "pause",
-  description: "Pause the currently playing music",
+  aliases: ['pe'],
+  description: "__**```(pe)Pause the currently playing music```**__",
   cooldown: 5,
   edesc: `Type this command to pause the Song!\nUsage: ${PREFIX}pause`,
   execute(message) {
