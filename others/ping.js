@@ -7,7 +7,7 @@ const {
 
 module.exports = {
   name: `ping`,
-  description: "__**```(pg)Gives you the ping of the Bot**__````,
+  description: "__**```(pg)Gives you the ping of the Bot```**__",
   aliases: ["pg"],
   cooldown: 3,
   edesc: "Type this command to see how fast the Bot can response to your messages / commands inputs!",
