@@ -11,7 +11,7 @@ const { PREFIX } = require(`../config.json`);
 module.exports = {
   name: "loop",
   aliases: ['l'],
-  description: "Toggle music loop",
+  description: "__**```(l)Toggle music loop```**__",
   cooldown: 3,
   edesc: `Just type the Command in the chat to activate/deactivate loop, you can also react to the loop emoji, to receive the same goal!\nUsage: ${PREFIX}loop`,
 async execute(message) {
