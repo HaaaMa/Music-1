@@ -13,7 +13,7 @@ const ytsr = require("youtube-sr")
 module.exports = {
   name: "play",
   aliases: ["p"],
-  description: "Plays song from YouTube/Stream",
+  description: "__**```(p)Plays song from YouTube/Stream```**__",
   cooldown: 1.5,
   edesc: `Type this command to play some music.\nUsage: ${PREFIX}play <TITLE | URL>`,
 
