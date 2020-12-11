@@ -11,7 +11,7 @@ const { PREFIX } = require(`../config.json`);
 module.exports = {
   name: "skip",
   aliases: ["s"],
-  description: "Skip the currently playing song",
+  description: "__**```(s)Skip the currently playing song```**__",
   cooldown: 5,
   edesc: `Type the Command, to skip to current listening song.\nUsage: ${PREFIX}skip`,
 
