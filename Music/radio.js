@@ -64,7 +64,7 @@
   module.exports = {
     name: "radio",
     aliases: ['ro'],
-    description: "__**``°(ro)Play a Radiostation```**__",
+    description: "__**```(ro)Play a Radiostation```**__",
     cooldown: 3,
     edesc: `Type this command to play a radio live stream!\nUsage: ${PREFIX}radio <1-34>`,
   async execute(message, args, client) {
