@@ -11,7 +11,7 @@ const { PREFIX } = require(`../config.json`);
 module.exports = {
   name: "skipto",
   aliases: ["st", "jump"],
-  description: "Skip to the selected queue number",
+  description: "__**```(st)Skip to the selected queue number```**__",
   cooldown: 5,
   edesc: `Type the Command, to skip a specific amount of songs to the wanted song.\nUsage: ${PREFIX}skipto`,
 
