@@ -10,7 +10,7 @@ const { PREFIX } = require(`../config.json`);
 ////////////////////////////
 module.exports = {
   name: "stop",
-  description: "Stops the music",
+  description: "__**```(leave)Stops the music```**__",
   aliases: ["leave", "end"],
   cooldown: 5,
   edesc: `Type the Command, to stop playing and leave the channel.\nUsage: ${PREFIX}stop`,
