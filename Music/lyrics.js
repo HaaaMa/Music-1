@@ -12,7 +12,7 @@ const { PREFIX } = require(`../config.json`);
 module.exports = {
   name: "lyrics",
   aliases: ["ly", "text"],
-  description: "Get lyrics for the currently playing song",
+  description: "__**```(ly)Get lyrics for the currently playing song```**__",
   cooldown: 7.5,
   edesc: `Type the Command while listening to a song, to get the lyrics from!\nUsage: ${PREFIX}lyrics`,
 
