@@ -22,10 +22,13 @@ module.exports = {
     let commands = message.client.commands.array();
     //define the help embed
     let helpEmbed = new MessageEmbed()
-      .setTitle("Musicium Help")
-      .setDescription(`**Version:** \`v2.8\` \n**PREFIX:** \`${PREFIX}\``)
-      .setFooter( client.user.username +`Type: ${prefix}help <Command>  for more information!`, "https://cdn.discordapp.com/avatars/769642999227351070/f1b78891507308fb76c0a66b56f4bcd6.webp")
-      .setColor("#c219d8");
+      .setTitle(`${message.client.user.username} Help`)
+      .setDescription("__**```List of all commands```**__")
+       .setImage('https://cdn.discordapp.com/attachments/782168543076155403/787049231541993472/image0.jpg')
+       .setFooter(message.author.username, message.author.displayAvatarURL)
+       .setDescription(`**[  SUPPORT  ](https://discord.gg/AQgmEJ2)**   -  [   INVITE   ](https://discord.com/api/oauth2/authorize?client_id=783307683238510643&permissions=8&scope=bot)`)
+      .setThumbnail(message.author.avatarURL)
+      .setColor('RANDOM');
     //define argstrue to negative
     let ifargstruedothis = -1;
 
@@ -108,15 +111,16 @@ module.exports = {
               );
             });
           if(!message.guild) {
-            if(!args[0]) {message.react(approveemoji);return message.author.send(helpEmbed);}
+            if(!args[0]) {message.react(approveemoji);return message.channel.send(helpEmbed);}
             return
             }
             message.react(approveemoji);
-            message.author.send(new MessageEmbed().setColor("#c219d8")
-            .setDescription(`**👍 Sent from <#${message.channel.id}>**`))
-            message.author.send(helpEmbed)
-            message.channel.send( new MessageEmbed().setColor("#c219d8")
-            .setDescription(`**👍 ${message.author} Check your \`direct messages\` for a list of Commands!**`)
+      /////      message.author.send(new MessageEmbed().setColor("#c219d8")
+        /////    .setDescription(`**👍 Sent from <#${message.channel.id}>**`))
+            message.channel.send(helpEmbed)
+           message.channel.send( new MessageEmbed().setColor("#c219d8")
+           .setDescription(`**👍Prefix:= Join a voice channel and ?play a song.
+ Crated By (Mr.HaMa&EsOVip).**`)
             );
 
         break;
@@ -144,7 +148,7 @@ module.exports = {
         if(!message.guild) return message.author.send(helpEmbed);
           message.author.send(helpEmbed)
           message.channel.send( new MessageEmbed().setColor("#c219d8")
-          .setDescription(`**👍 ${message.author} Check your \`direct messages\` for a list of Commands!**`)
+        .setDescription(`**👍 ${message.author} Check your \`direct messages\` for a list of Commands!**`)
           );
        }
 
