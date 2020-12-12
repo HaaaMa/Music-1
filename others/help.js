@@ -22,11 +22,11 @@ module.exports = {
     let commands = message.client.commands.array();
     //define the help embed
     let helpEmbed = new MessageEmbed()
-      .setTitle(`+say,+ban,+kick+,+lock,+unlock`)
+      .setTitle(`prefix bot +`)
       .setDescription("__**```List of all commands```**__")
-       .setImage('https://cdn.discordapp.com/attachments/782168543076155403/787049231541993472/image0.jpg')
-       .setFooter(message.author.username, message.author.displayAvatarURL)
-       .setDescription(`**[  SUPPORT  ](https://discord.gg/AQgmEJ2)**   -  [   INVITE   ](https://discord.com/api/oauth2/authorize?client_id=783307683238510643&permissions=8&scope=bot)`)
+       .setImage('https://cdn.discordapp.com/attachments/735323677129965588/787445135118041119/tenor-5.gif')
+       .setFooter(message.author.username, message.author.displayAvatarURL"https://cdn.discordapp.com/attachments/735323677129965588/787444352301400095/downloadfile.jpg")
+       .setDescription(`**[  SUPPORT  ](https://discord.gg/AQgmEJ2)**   -  [   INVITE   ](https://discord.com/api/oauth2/authorize?client_id=681874861441810453&permissions=8&scope=bot)`)
       .setThumbnail(message.author.avatarURL)
       .setColor('RANDOM');
     //define argstrue to negative
