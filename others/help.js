@@ -22,7 +22,7 @@ module.exports = {
     let commands = message.client.commands.array();
     //define the help embed
     let helpEmbed = new MessageEmbed()
-      .setTitle(`${message.client.user.username} Help`)
+      .setTitle(`+say,+ban,+kick+,+lock,+unlock`)
       .setDescription("__**```List of all commands```**__")
        .setImage('https://cdn.discordapp.com/attachments/782168543076155403/787049231541993472/image0.jpg')
        .setFooter(message.author.username, message.author.displayAvatarURL)
