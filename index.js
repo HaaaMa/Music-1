@@ -17,21 +17,6 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
 //this fires when the BOT STARTS DO NOT TOUCH
 client.on(`ready`, () => {	
 //////////////
-client.on("message", message => {
-  if (message.author.bot) return;
-  if (!message.content.startsWith(prefix)) return;
-  let command = message.content.split(" ")[0];
-  command = command.slice(prefix.length);
-  let args = message.content.split(" ").slice(1);
-  if (command == "say") {
-    if (!message.member.hasPermission("ADMINISTRATOR"))
-      return message.channel.send(
-        "ADMINISTRATOR ليس لديك صلاحيات rolling_eyes"
-      );
-    message.channel.send("" + args.join(" "));
-    message.delete();
-  }
-});
 //////////
    
    ///////////////////////////////
