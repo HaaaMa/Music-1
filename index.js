@@ -40,7 +40,7 @@ client.on("message", message => {
   if (message.author.codes) return;
   if (!message.content.startsWith(PREFIX)) return;
   let command = message.content.split(" ")[0];
-  command = command.slice(prefix.length);
+  command = command.slice(PREFIX.length);
   let args = message.content.split(" ").slice(1);
   if (message.content.split(" ")[0].toLowerCase() === PREFIX + "kick") {
     if (!message.channel.guild) return;
