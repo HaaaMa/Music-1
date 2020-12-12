@@ -35,7 +35,7 @@ client.on(`ready`, () => {
       });
       
 
-    client.user.setActivity(`Type: ${PREFIX}help | ${client.guilds.cache.size} Server`, { type: "PLAYING"});
+    client.user.setActivity(`Type: ${PREFIX}help | ${client.guilds.cache.size} Server/you choyn chanell and =play song`, { type: "PLAYING"});
    
   
       }, (5000));
