@@ -17,52 +17,6 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
 //this fires when the BOT STARTS DO NOT TOUCH
 client.on(`ready`, () => {	
 //////////////
-client.on("message", message => {
-  if (message.author.bot) return;
-  if (!message.content.startsWith(PREFIX)) return;
-  let command = message.content.split(" ")[0];
-  command = command.slice(PREFIX.length);
-  let args = message.content.split(" ").slice(1);
-  if (command == "say") {
-    if (!message.member.hasPermission("ADMINISTRATOR"))
-      return message.channel.send(
-        "ADMINISTRATOR ليس لديك صلاحيات rolling_eyes"
-      );
-    message.channel.send("" + args.join(" "));
-    message.delete();
-  }
-});
-  
-//////////
-client.on("message", message => {
-  if (!message.channel.guild) return;
-  if (message.author.bot) return;
-  if (message.author.codes) return;
-  if (!message.content.startsWith(PREFIX)) return;
-  let command = message.content.split(" ")[0];
-  command = command.slice(PREFIX.length);
-  let args = message.content.split(" ").slice(1);
-  if (message.content.split(" ")[0].toLowerCase() === PREFIX + "kick") {
-    if (!message.channel.guild) return;
-    if (!message.guild.member(message.author).hasPermission("KICK_MEMBERS"))
-      return;
-    if (!message.guild.member(client.user).hasPermission("KICK_MEMBERS"))
-      return;
-    let user = message.mentions.users.first();
-    if (message.mentions.users.size < 1)
-      return message.reply("User Tag").then(message => message.delete(4000));
-    if (!message.guild.member(user).bannable)
-      return message
-        .reply("I CANT KICK THIS USER")
-        .then(message => message.delete(4000));
-    message.guild.member(user).kick(7, user);
-    message.channel
-      .send(
-        `**Successfully baned${message.displayName}<a:emoji_3:784873566428332033>**`
-      )
-      .then(message => message.delete(10000));
-  }
-});
 
 ////////
    
