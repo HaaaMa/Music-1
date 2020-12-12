@@ -41,27 +41,7 @@ setInterval(() => {
 console.log(`${client.user.username} ready! ,Users ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}, Guilds ${client.guilds.cache.size}`);
 client.user.setActivity(`${PREFIX}help ,Users ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}, Guilds ${client.guilds.cache.size}`);
 
-}, 15000);
-
-});
-client.on("warn", (info) => console.log(info));
-client.on("error", console.error);
-
-   
-  
-      }, (5000));
-      ////////////////////////////////
-      ////////////////////////////////
-    figlet.text(`${client.user.username} ready!`, function (err, data) {
-      if (err) {
-          console.log('Something went wrong');
-          console.dir(err);
-      }
-      console.log(`═════════════════════════════════════════════════════════════════════════════`);
-      console.log(data)
-      console.log(`═════════════════════════════════════════════════════════════════════════════`);
-    })
-   
+}, 15000);  
 });
 //DO NOT TOUCH
 client.on(`warn`, (info) => console.log(info));
