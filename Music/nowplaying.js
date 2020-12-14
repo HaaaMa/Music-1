@@ -11,7 +11,7 @@ const { PREFIX } = require(`../config.json`);
 module.exports = {
   name: "nowplaying",
   aliases: ['np',"now-playing","current","current-song"],
-  description: "__**```(np)Show current song```**__",
+  description: "(np)Show current song",
   cooldown: 5,
   edesc: `Type nowplaying in chat, to see which song is currently playing! As well as how long it will take until its finished\nUsage: ${PREFIX}nowplaying`,
 
