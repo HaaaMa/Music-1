@@ -7,7 +7,7 @@ const {
 
 module.exports = {
   name: `uptime`,
-  description: "__**```(ue)Gives you the uptime of the Bot```**__",
+  description: "(ue)Gives you the uptime of the Bot",
   aliases: ["ue"],
   cooldown: 5,
   edesc: "With that you can see how long the Bot has been running nonstop",
