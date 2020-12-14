@@ -22,7 +22,7 @@ module.exports = {
     let commands = message.client.commands.array();
     //define the help embed
     let helpEmbed = new MessageEmbed()
-      .setTitle(`prefix bot +`)
+      .setTitle(`prefix bot =`)
       .setDescription("__**```List of all commands```**__")
        .setImage('https://cdn.discordapp.com/attachments/735323677129965588/787445135118041119/tenor-5.gif')
        .setFooter(message.author.username, message.author.displayAvatarURL)
@@ -115,9 +115,9 @@ module.exports = {
             return
             }
             message.react(approveemoji);
-/////message.channel.send( new MessageEmbed().setColor("#c219d8")
-          ///// .setDescription(`**👍${message.author}Prefix:= Join a voice channel and ?play a song.`)
-                  ////    );
+message.channel.send( new MessageEmbed().setColor("#c219d8")
+           .setDescription(`**👍${message.author}Prefix:= Join a voice channel and ?play a song.`)
+                      );
 message.channel.send(helpEmbed)
 
         break;
