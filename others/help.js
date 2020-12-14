@@ -115,9 +115,9 @@ module.exports = {
             return
             }
             message.react(approveemoji);
-message.channel.send( new MessageEmbed().setColor("#c219d8")
-           .setDescription(`**👍${message.author}Prefix:= Join a voice channel and ?play a song.`)
-                      );
+//////message.channel.send( new MessageEmbed().setColor("#c219d8")
+        /////   .setDescription(`**👍${message.author}Prefix:= Join a voice channel and ?play a song.`)
+         //////             );
 message.channel.send(helpEmbed)
 
         break;
