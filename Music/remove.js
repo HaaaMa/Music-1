@@ -10,7 +10,7 @@ const { PREFIX } = require(`../config.json`);
 ////////////////////////////
 module.exports = {
   name: "remove",
-  description: "__**```(delete)Remove song from the queue```**__",
+  description: "(delete)Remove song from the queue",
   aliases: ["delete"],
   cooldown: 1.5,
   edesc: `Type this command to remove a specific song from the queue.\nUsage: ${PREFIX}remove <Queue num.>`,
