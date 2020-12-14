@@ -11,7 +11,7 @@ const { PREFIX, } = require(`../config.json`);
 ////////////////////////////
 module.exports = {
   name: "filter",
-  description: "__**```(fi)Set Audio - Effects```**__",
+  description: "(fi)Set Audio - Effects",
   aliases: ["fi"],
   cooldown: 5,
   edesc: `Type this Command to change the current audio effect - style \nUsage: ${PREFIX}filter <Filtertype>`,
