@@ -11,7 +11,7 @@ const { PREFIX } = require(`../config.json`);
 module.exports = {
   name: "queue",
   aliases: ["qu"],
-  description: "__**```(qu)Show the music queue and now playing.```**__",
+  description: "(qu)Show the music queue and now playing.",
   cooldown: 7.5,
   edesc: `Type this command to play some music.\nUsage: ${PREFIX}queue`,
   execute(message) {
