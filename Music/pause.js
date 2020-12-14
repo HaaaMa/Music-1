@@ -6,7 +6,7 @@ const { PREFIX } = require(`../config.json`);
 module.exports = {
   name: "pause",
   aliases: ['pe'],
-  description: "__**```(pe)Pause the currently playing music```**__",
+  description: "(pe)Pause the currently playing music",
   cooldown: 5,
   edesc: `Type this command to pause the Song!\nUsage: ${PREFIX}pause`,
   execute(message) {
