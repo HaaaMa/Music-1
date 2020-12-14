@@ -22,11 +22,11 @@ module.exports = {
     let commands = message.client.commands.array();
     //define the help embed
     let helpEmbed = new MessageEmbed()
-      .setTitle(`prefix bot =`)
+      .setTitle(`List of all commands`)
       .setDescription("__**```List of all commands```**__")
-       .setImage('https://cdn.discordapp.com/attachments/782168543076155403/788038115666559006/image0.jpg')
+       .setImage('https://cdn.discordapp.com/attachments/770233044392607776/788173412123934720/ab45bb4451536652faca51ae4f42d5dd.gif')
        .setFooter(message.author.username, message.author.displayAvatarURL)
-       .setDescription(`**[  SUPPORT  ](https://discord.gg/AQgmEJ2)**   -  [   INVITE   ](https://discord.com/api/oauth2/authorize?client_id=783307683238510643&permissions=8&scope=bot)`)
+       .setDescription(`**[  SUPPORT  ](https://discord.gg/AQgmEJ2)**   -  [   INVITE   ](linke bot dane)`)
       .setThumbnail(message.author.avatarURL)
       .setColor('RANDOM');
     //define argstrue to negative
