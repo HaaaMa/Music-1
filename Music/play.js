@@ -85,12 +85,12 @@ async execute(message, args, client) {
         //if its an url
         if (urlValid) { //send searching link
           message.channel.send(new MessageEmbed().setColor("#c219d8")
-            .setDescription(`**:umbrella:  Searching 🔍 [\`LINK\`](${args.join(" ")})**`))
+            .setDescription(`**:wolfyotube:   Searching 🔍 [\`LINK\`](${args.join(" ")})**`))
           //if not
         }
         else { //send searching TITLE
           message.channel.send(new MessageEmbed().setColor("#c219d8")
-            .setDescription(`**:umbrella:  Searching 🔍 \`${args.join(" ")}\`**`))
+            .setDescription(`**:wolfyotube:   Searching 🔍 \`${args.join(" ")}\`**`))
         }
         //Set selfdeaf and serverdeaf true
         queueConstruct.connection.voice.setSelfDeaf(true);
