@@ -11,7 +11,7 @@ const { PREFIX } = require(`../config.json`);
 module.exports = {
   name: "volume",
   aliases: ["v"],
-  description: "(v)Change volume0/1000",
+  description: "(v)Change volume0/200",
   cooldown: 5,
   edesc: `Type the Command, to change the volume of the current song.\nUsage: ${PREFIX}volume <0-200>`,
 
