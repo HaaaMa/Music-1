@@ -132,8 +132,8 @@ async execute(message, args, client) {
       }
     }
     //get the thumbnail
-    let thumb = "https://cdn.discordapp.com/attachments/748095614017077318/769672148524335114/unknown.png"
-    if (song.thumbnail === undefined) thumb = "https://cdn.discordapp.com/attachments/748095614017077318/769672148524335114/unknown.png";
+    let thumb = "https://images-ext-2.discordapp.net/external/t3ipSrE8XlAptsIJbXnvoVEfxqAk8UMIrZeCSdHYNB0/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.png"
+    if (song.thumbnail === undefined) thumb = "https://images-ext-2.discordapp.net/external/t3ipSrE8XlAptsIJbXnvoVEfxqAk8UMIrZeCSdHYNB0/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.png";
     else thumb = song.thumbnail.url;
     //if there is a server queue send that message!
     if (serverQueue) {
