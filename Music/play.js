@@ -164,7 +164,7 @@ async execute(message, args, client) {
         .setThumbnail(thumb)
         .setURL(song.url)
         .setDescription(`\`\`\`Has been added to the Queue.\`\`\``)
-        .addField("Estimated time until playing:", `\`${estimatedtime}\``, true)
+        .addField("Estimated time until <:emoji_5:813090579810484284>", `\`${estimatedtime}\``, true)
         .addField("Position in queue", `**\`${serverQueue.songs.length - 1}\`**`, true)
         .setFooter(`Requested by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
       //send the Embed into the Queue Channel
