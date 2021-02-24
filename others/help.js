@@ -58,7 +58,7 @@ module.exports = {
   
    .setColor("BLUE");
    helpEmbed.setTimestamp();
-   message.react("<a:emoji_26:809385634149826611>")
+   message.react("<a:emoji_11:814035839956418570>")
     return message.channel.send(helpEmbed).catch(console.error);
 
   }
