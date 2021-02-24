@@ -17,7 +17,7 @@ module.exports = {
 
     let helpEmbed = new MessageEmbed()
     .setThumbnail(message.author.avatarURL())
-    .setImage('https://cdn.discordapp.com/attachments/807674391630184508/810147577743933470/069ccee7aea93c673c8c5c49b6cf7ac8.gif')
+    .setImage('')
     .setDescription(`
 
  ≪ Prefix Bot . ≫
