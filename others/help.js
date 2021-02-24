@@ -17,6 +17,7 @@ module.exports = {
 
     let helpEmbed = new MessageEmbed()
     .setThumbnail(message.author.avatarURL())
+    .setImage('')
     .setDescription(`
 
  ≪ Prefix Bot . ≫
