@@ -6,145 +6,60 @@ const {
 } = require(`../config.json`);
 const db = require('quick.db');
 
+
 module.exports = {
-  name: `help`,
-  description: "(h)Gives you a list of all help Commands",
-  aliases: ["h","commands"],
-  cooldown: 3,
-  edesc: "Type help to get a short preview of all Commands, Type help <COMMANDNAME> to get extended information about this one command!",
-  async execute(message,args,client) {
-
-    let prefix = await db.get(`prefix_${message.guild.id}`)
-    if(prefix === null) prefix = PREFIX;
-    //react with approve emoji
-    message.react("769665713124016128");
-    //define the commands as a command
+  name: "help",
+  aliases: ["h"],
+  cooldown: 8,
+  description: "**all commands**",
+  execute(message) {
     let commands = message.client.commands.array();
-    //define the help embed
+
     let helpEmbed = new MessageEmbed()
-      .setTitle(`List of all commands`)
-      .setDescription("__**```List of all commands```**__")
-       .setImage('')
-       .setFooter(message.author.username, message.author.displayAvatarURL)
-       .setDescription(`**[  Support  ](https://discord.gg/jcs4XwcExv)**   -  [   invite   ](https://discord.com/api/oauth2/authorize?client_id=807322703669231646&permissions=8&scope=bot)`)
-      .setThumbnail(message.author.avatarURL)
-      .setColor('RANDOM');
-    //define argstrue to negative
-    let ifargstruedothis = -1;
+    .setThumbnail(message.author.avatarURL())
+    .setDescription(`
 
-      switch(args[0]){
-          case "filter":
-           ifargstruedothis=0;
-          break;
-          case "loop":
-            ifargstruedothis=1;
-          break;
-          case "lyrics":
-            ifargstruedothis=2
-          break;
-          case "nowplaying":
-            ifargstruedothis=3
-          break;
-          case "pause":
-            ifargstruedothis=4
-          break;
-          case "play":
-            ifargstruedothis=5
-          break;
-          case "playlist":
-            ifargstruedothis=6
-          break;
-          case "queue":
-            ifargstruedothis=7
-          break;
-          case "radio":
-            ifargstruedothis=8
-          break;
-          case "remove":
-            ifargstruedothis=9
-          break;
-          case "resume":
-            ifargstruedothis=10
-          break;
-          case "search":
-            ifargstruedothis=11
-          break;
-          case "shuffle":
-            ifargstruedothis=12
-          break;
-          case "skip":
-            ifargstruedothis=13
-          break;
-          case "skipto":
-            ifargstruedothis=14
-          break;
-          case "stop":
-            ifargstruedothis=15
-          break;
-          case "volume":
-            ifargstruedothis=16
-          break;
-          case "botlist":
-            ifargstruedothis=17
-          break;
-          case "help":
-            ifargstruedothis=18
-          break;
-          case "invite":
-            ifargstruedothis=19
-          break;
-          case "ping":
-            ifargstruedothis=20
-          break;
-          case "prefix":
-            ifargstruedothis=21
-          break;
-          case "uptime":
-            ifargstruedothis=22
-          break;
-          default:
-            commands.forEach((cmd) => {
-              helpEmbed.addField(
-                `**${prefix}${cmd.name}**`,
-                `${cmd.description}`,
-                true
-              );
-            });
-          if(!message.guild) {
-            if(!args[0]) {message.react(approveemoji);return message.channel.send(helpEmbed);}
-            return
-            }
-            message.react(approveemoji);
-message.channel.send(helpEmbed)
+ ≪ Prefix Bot ? ≫
 
-        break;
-       }
+      <a:emoji_11:814035817253175316> command music <a:emoji_11:814035817253175316>
 
-       if(ifargstruedothis>=0){
-         let aliases = commands[ifargstruedothis].aliases;
-         if(aliases === undefined || !aliases) aliases="No Aliases!";
-         let cooldown = commands[ifargstruedothis].cooldown;
-         if(cooldown === undefined || !cooldown) cooldown="No Cooldown!";
+ <a:emoji_7:814035064635129907> ?loop 
+ <a:emoji_7:814035064635129907> ?lyrics              
+ <a:emoji_7:814035064635129907> ?pause
+ <a:emoji_7:814035064635129907> ?play                   
+ <a:emoji_7:814035064635129907> ?queue
+ <a:emoji_7:814035064635129907> ?radio                 
+ <a:emoji_7:814035064635129907> ?remove
+ <a:emoji_7:814035064635129907> ?resume             
+ <a:emoji_7:814035064635129907> ?search
+ <a:emoji_7:814035064635129907> ?shuffle              
+ <a:emoji_7:814035064635129907> ?skip
+ <a:emoji_7:814035064635129907> ?skipto               
+ <a:emoji_7:814035064635129907> ?stop
+ <a:emoji_7:814035064635129907> ?volume
 
+      <a:emoji_7:814035032704155728> Filter Commands <a:emoji_7:814035032704155728>
+ <a:emoji_10:814035106293088267> ?fi 8D
+ <a:emoji_10:814035106293088267> ?fi tremolo
+ <a:emoji_10:814035106293088267> ?fi vibrato
+ <a:emoji_10:814035106293088267> ?fi pulsator
+ <a:emoji_10:814035106293088267> ?fi clear
+ <a:emoji_10:814035106293088267> ?fi bassboost
+ <a:emoji_10:814035106293088267> ?fi vaporwave
 
-        helpEmbed.addField(
-          `**${prefix}${commands[ifargstruedothis].name}**`,
-          `\`\`\`fix\n${commands[ifargstruedothis].edesc}\n\`\`\`\n\`${commands[ifargstruedothis].description}\``
-        );
-        helpEmbed.addField(
-          `**:notes: Aliases:**`,
-          `\`${aliases}\``
-        );
-        helpEmbed.addField(
-          `**:wrench: Cooldown:**`,
-          `\`${cooldown}\``
-        );
-        if(!message.guild) return message.author.send(helpEmbed);
-          message.author.send(helpEmbed)
-          message.channel.send( new MessageEmbed().setColor("#c219d8")
-        .setDescription(`**👍 ${message.author} Check your \`direct messages\` for a list of Commands!**`)
-          );
-       }
+      <a:emoji_13:814037864479981578> Others <a:emoji_13:814037864479981578>
+ <a:emoji_8:814035085400735755> ?help              <a:emoji_8:814035085400735755> ?ping
+ <a:emoji_8:814035085400735755> ?prefix             <a:emoji_8:814035085400735755> ?uptime
 
-}
-}
+[support](https://discord.gg/jcs4XwcExv)    -    [invite](https://discord.com/api/oauth2/authorize?client_id=811955068563488788&permissions=133692224&scope=bot)
+
+`)
+
+  
+   .setColor("BLUE");
+   helpEmbed.setTimestamp();
+   message.react("<a:emoji_26:809385634149826611>")
+    return message.channel.send(helpEmbed).catch(console.error);
+
+  }
+};
