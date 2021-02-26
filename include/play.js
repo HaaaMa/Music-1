@@ -163,10 +163,13 @@ module.exports = {
       const newsong = new MessageEmbed()
         .setTitle("<:Playing:769665713124016128>"   +song.title)
         .setURL(song.url)
-        .setColor("#c219d8")
-        .setThumbnail(thumb)
+        .setColor("RANDOM")
+        .setImage(thumb)
+        .setThumbnail()
         .setFooter(`Requested by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-        .addField("Duration:", `\`${song.duration} Minutes\``, true)
+        .addField(" Volume :", `\`${queue.volume}%\``, true)
+        .addField(" Time :", `\`${song.duration} Minutes 🖇\``, true)
+
 
       var playingMessage = await queue.textChannel.send(newsong);
 
