@@ -166,7 +166,7 @@ module.exports = {
         .setColor("RANDOM")
         .setImage(thumb)
         .setThumbnail()
-        .setFooter(`Requested by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+        .addField(" Requested by :", `${message.author}`, true)
         .addField(" Volume :", `\`${queue.volume}%\``, true)
         .addField(" Time :", `\`${song.duration} Minutes 🖇\``, true)
 
