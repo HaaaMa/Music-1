@@ -164,6 +164,7 @@ module.exports = {
         .setTitle("<:Playing:769665713124016128>"   +song.title)
         .setURL(song.url)
         .setColor("RANDOM")
+        .setThumbnail(`https://cdn.discordapp.com/attachments/796122909533405195/814811033126305812/avatar.png`)
         .setImage(thumb)
         .setThumbnail()
         .addField(" Requested by :", `${message.author}`, true)
