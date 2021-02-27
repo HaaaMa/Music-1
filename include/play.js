@@ -203,7 +203,7 @@ module.exports = {
 
         member.send(new MessageEmbed()
         .setTitle("<:no:770326304473350145> | You must be in the Same Voice Channel as me!")
-        .setColor("#ff0e7a"))
+        .setColor("RED"))
         
         reaction.users.remove(user).catch(console.error);
         
@@ -221,7 +221,7 @@ module.exports = {
           let queueEmbed = new MessageEmbed()
             .setTitle("Music Queue")
             .setDescription(description)
-            .setColor("#c219d8")
+            .setColor("RED")
              ;
 
           const splitDescription = splitMessage(description, {
@@ -259,7 +259,7 @@ module.exports = {
           .setTitle("Now playing")
           .setDescription(`[**${song.title}**](${song.url})`)
           .setThumbnail(song.thumbnail.url)
-          .setColor("#c219d8")
+          .setColor("RED")
           .setFooter("Time Remaining: " + new Date(left * 1000).toISOString().substr(11, 8));
           //if its a stream
           if(ms >= 10000) {
@@ -295,7 +295,7 @@ module.exports = {
           let lyrics = null;
           let temEmbed = new MessageEmbed()
           .setAuthor("Searching...", "https://cdn.discordapp.com/emojis/757632044632375386.gif?v=1").setFooter("Lyrics")
-          .setColor("#c219d8")
+          .setColor("RED")
           let result = await message.channel.send(temEmbed)
           try {
             lyrics = await lyricsFinder(queue.songs[0].title,"");
@@ -307,7 +307,7 @@ module.exports = {
           let lyricsEmbed = new MessageEmbed()
             .setTitle("<:lyrics:769938447279456296> Lyrics")
             .setDescription(lyrics)
-            .setColor("#c219d8")
+            .setColor("RED")
 
           if (lyricsEmbed.description.length >= 2048)
 
