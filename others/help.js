@@ -21,15 +21,15 @@ module.exports = {
     .setDescription(`
 
 User Commands
-`.invite` - `.support` - `.about`
-`.ping` - `.prefix` - `.uptime`
+.invite - .support - .about
+.ping - .prefix - .uptime
 
 Music Commands
-`.play` - `.skip` - `.skipto`
-`.stop` - `.volume` - `.nowplaying`
-`.suffle` - `.search` - `.resume`
-`.remove` - `.queue` - `.filter`
-`.loop` - `.lyric` - `.radio`
+.play - .skip - .skipto
+.stop - .volume - .nowplaying
+.suffle - .search - .resume
+.remove - .queue - `.filter
+.loop - .lyric - .radio
 
 Links
 [support](https://discord.gg/jcs4XwcExv)    -    [invite](https://discord.com/oauth2/authorize?client_id=806840212608909344&permissions=70346817&scope=bot)
