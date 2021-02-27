@@ -25,13 +25,12 @@ module.exports = {
 `.ping` - `.prefix` - `.uptime`
 Music Commands
 `.play` - `.skip` - `.skipto`
-`.stop` - `.volume` - `nowplaying`
+`.stop` - `.volume` - `.nowplaying`
 `.suffle` - `.search` - `.resume`
 `.remove` - `.queue` - `.filter`
 `.loop` - `.lyric` - `.radio`
-
 Links
-[support](https://discord.gg/jcs4XwcExv)    -    [invite](https://discord.com/api/oauth2/authorize?client_id=811955068563488788&permissions=133692224&scope=bot)
+[support](https://discord.gg/jcs4XwcExv)    -    [invite](https://discord.com/oauth2/authorize?client_id=806840212608909344&permissions=70346817&scope=bot)
 
 `)
 
