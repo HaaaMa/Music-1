@@ -78,7 +78,7 @@ client.on(`message`, async (message) => {
 
   //information message when the bot has been tagged
   if(message.content.includes(client.user.id)) {
-    message.reply(new Discord.MessageEmbed().setColor("#c219d8").setAuthor(`${message.author.username}, My Prefix is ${prefix}, to get started; type ${prefix}help`, message.author.displayAvatarURL({dynamic:true})));
+    message.reply(new Discord.MessageEmbed().setColor("RED").setAuthor(`${message.author.username}, My Prefix is ${prefix}, to get started; type ${prefix}help`, message.author.displayAvatarURL({dynamic:true})));
   } 
   //An embed announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}embed`)){
@@ -86,9 +86,9 @@ client.on(`message`, async (message) => {
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("#c219d8")
+    .setColor("RED")
     .setDescription(saymsg)
-    .setFooter("Musicium", client.user.displayAvatarURL())
+    .setFooter("Reyna", client.user.displayAvatarURL())
     //delete the Command
     message.delete({timeout: 300})
     //send the Message
