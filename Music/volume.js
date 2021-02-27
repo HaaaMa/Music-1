@@ -28,7 +28,7 @@ execute(message, args) {
     if (!canModifyQueue(message.member)) return;
     //define Info Embed
     const volinfoembed = new MessageEmbed()
-    .setColor("#c219d8")
+    .setColor("RED")
     .setTitle(`🔊 Volume is: \`${queue.volume}%\``)
     //if no args return info embed
     if (!args[0]) return message.channel.send(volinfoembed).catch(console.error);
@@ -43,7 +43,7 @@ execute(message, args) {
     queue.connection.dispatcher.setVolumeLogarithmic(args[0] / 100);
     //define approve embed
     const volinfosetembed = new MessageEmbed()
-    .setColor("#c219d8")
+    .setColor("RED")
     .setTitle(`🔊 Volume changed to: \`${args[0]}%\`!`)
     //Send approve message
     return queue.textChannel.send(volinfosetembed).catch(console.error);
