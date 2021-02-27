@@ -28,7 +28,7 @@ Music Commands
 .play - .skip - .skipto
 .stop - .volume - .nowplaying
 .suffle - .search - .resume
-.remove - .queue - `.filter
+.remove - .queue - .filter
 .loop - .lyric - .radio
 
 Links
