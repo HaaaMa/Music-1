@@ -169,7 +169,7 @@ module.exports = {
         .setThumbnail()
         .addField(" Requested by :", `${message.author}`, true)
         .addField(" Volume :", `\`${queue.volume}%\``, true)
-        .addField(" Time :", `\`${song.duration} Minutes 🖇\``, true)
+        .addField(" Time :", `\`${song.duration} Minutes \``, true)
 
 
       var playingMessage = await queue.textChannel.send(newsong);
