@@ -35,7 +35,6 @@ Links
 
   .setFooter(`Request By ${message.author.tag}, message.author.avatarURL()`)
    .setColor("BLUE");
-   helpEmbed.setTimestamp();
    message.react("<a:emoji_11:814035839956418570>")
     return message.channel.send(helpEmbed).catch(console.error);
 
