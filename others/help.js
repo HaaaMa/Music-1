@@ -18,7 +18,7 @@ module.exports = {
     let helpEmbed = new MessageEmbed()
     .setThumbnail(message.author.avatarURL())
     .setImage('')
-    .setDescription(`
+    .setFooter(`Requested by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
 
 User Commands
 .invite - .support - .about
