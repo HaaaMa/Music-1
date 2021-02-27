@@ -116,7 +116,7 @@ async execute(message, args, client) {
       const song = queue.songs[0];
       //play the collected song song, message, client, filters
       message.channel.send(new MessageEmbed()
-      .setColor("#c219d8")
+      .setColor("RED")
       .setAuthor("Applying: " + args[0], "https://cdn.discordapp.com/emojis/769935094285860894.gif")).then(msg =>{
         msg.delete({timeout: 2000});
       })
