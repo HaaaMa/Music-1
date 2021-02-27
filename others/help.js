@@ -17,7 +17,7 @@ module.exports = {
 
     let helpEmbed = new MessageEmbed()
     .setThumbnail(message.author.avatarURL())
-    .setImage('https://cdn.discordapp.com/attachments/748984375772840046/800487276173328445/f7179eb460f2925c2edab10872a3c6f6.gif')
+    .setImage('')
     .setDescription(`
 
  User Commands
