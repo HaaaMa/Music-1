@@ -162,7 +162,7 @@ async execute(message, args, client) {
         .setTitle("<:emoji_5:813090579810484284>" + song.title)
         .setURL(song.url)
         .setThumbnail(`https://cdn.discordapp.com/attachments/796122909533405195/814811033126305812/avatar.png`)
-        .setColor("RANDOM")
+        .setColor("RED")
         .setImage(thumb)
         .setThumbnail()
         .addField(" Requested by :", `${message.author}`, true)
