@@ -160,13 +160,14 @@ async execute(message, args, client) {
       //the new song embed
       const newsong = new MessageEmbed()
         .setTitle("<:emoji_5:813090579810484284>" + song.title)
-        .setColor("#c219d8")
-        .setThumbnail(thumb)
         .setURL(song.url)
-        .setDescription(`\`\`\`Has been added to the Queue.\`\`\``)
-        .addField("Estimated time until <:emoji_5:813090579810484284>", `\`${estimatedtime}\``, true)
-        .addField("Position in queue", `**\`${serverQueue.songs.length - 1}\`**`, true)
-        .setFooter(`Requested by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+        .setThumbnail(`https://cdn.discordapp.com/attachments/796122909533405195/814811033126305812/avatar.png`)
+        .setColor("RANDOM")
+        .setImage(thumb)
+        .setThumbnail()
+        .addField(" Requested by :", `${message.author}`, true)
+        .addField(" Volume :", `\`${queue.volume}%\``, true)
+        .addField(" Time :", `\`${song.duration} Minutes \``, true)
       //send the Embed into the Queue Channel
         return serverQueue.textChannel
         .send(newsong)
