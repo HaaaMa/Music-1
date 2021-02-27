@@ -43,7 +43,7 @@ execute(message) {
       .setTitle("<:Playing:769665713124016128> Now playing")
       .setDescription(`[**${song.title}**](${song.url})`)
       .setThumbnail(song.thumbnail.url)
-      .setColor("#c219d8")
+      .setColor("RED")
       .setFooter("Time Remaining: " + new Date(left * 1000).toISOString().substr(11, 8));
       //if its a stream
       if(ms >= 10000) {
