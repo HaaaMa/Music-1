@@ -30,7 +30,6 @@ Music Commands
 `.loop` - `.lyric` - `.radio`
 Links
 [support](https://discord.gg/jcs4XwcExv)    -    [invite](https://discord.com/oauth2/authorize?client_id=806840212608909344&permissions=70346817&scope=bot)
-
 `)
 
   
