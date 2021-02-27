@@ -16,7 +16,6 @@ module.exports = {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
-    .setThumbnail(message.author.avatarURL())
     .setDescription(`
 
  User Commands
