@@ -168,8 +168,8 @@ module.exports = {
         .setImage(thumb)
         .setThumbnail()
         .addField(" Requested by :", `${message.author}`, true)
-        .addField(" Volume :", `\`${queue.volume}%\``, true)
         .addField(" Time :", `\`${song.duration} Minutes \``, true)
+        .addField(" Volume :", `\`${queue.volume}%\``, true)
 
 
       var playingMessage = await queue.textChannel.send(newsong);
