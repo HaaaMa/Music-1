@@ -68,12 +68,12 @@ async execute(message, args, client) {
         //if its an url
         if (urlValid) { //send searching link
           message.channel.send(new MessageEmbed().setColor("RED")
-            .setDescription(`** <:emoji_6:813090602135584840>  Searching 🔍 [\`LINK\`](${args.join(" ")})**`))
+            .setDescription(`** <:emoji_6:813090602135584840>  Searching <:emoji_1:815583474400493568> [\`LINK\`](${args.join(" ")})**`))
         //if not
         }
         else { //send searching TITLE
           message.channel.send(new MessageEmbed().setColor("RED")
-            .setDescription(`** <:emoji_6:813090602135584840>  Searching 🔍 \`${args.join(" ")}\`**`))
+            .setDescription(`** <:emoji_6:813090602135584840>  Searching <:emoji_1:815583474400493568> \`${args.join(" ")}\`**`))
         }
       } else {
         //If nothing is playing join the channel
@@ -85,12 +85,12 @@ async execute(message, args, client) {
         //if its an url
         if (urlValid) { //send searching link
           message.channel.send(new MessageEmbed().setColor("RED")
-            .setDescription(`** <:emoji_6:813090602135584840> Searching 🔍 [\`LINK\`](${args.join(" ")})**`))
+            .setDescription(`** <:emoji_6:813090602135584840> Searching <:emoji_1:815583474400493568> [\`LINK\`](${args.join(" ")})**`))
           //if not
         }
         else { //send searching TITLE
           message.channel.send(new MessageEmbed().setColor("RED")
-            .setDescription(`** <:emoji_6:813090602135584840>  Searching 🔍 \`${args.join(" ")}\`**`))
+            .setDescription(`** <:emoji_6:813090602135584840>  Searching <:emoji_1:815583474400493568> \`${args.join(" ")}\`**`))
         }
         //Set selfdeaf and serverdeaf true
         queueConstruct.connection.voice.setSelfDeaf(true);
