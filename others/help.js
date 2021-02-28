@@ -19,6 +19,7 @@ module.exports = {
     .setThumbnail(`https://cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.png?size=1024`)
     .setDescription(`
 
+**Reyna Help**
  User Commands
 \`.invite\` - \`.support\` - \`.about\`
 \`.ping\` - \`.prefix\` - \`.uptime\`
