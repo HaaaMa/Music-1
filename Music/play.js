@@ -166,8 +166,8 @@ async execute(message, args, client) {
         .setImage(thumb)
         .setThumbnail()
         .addField(" Requested by :", `${message.author}`, true)
-        .addField(" Volume :", `\`${queue.volume}%\``, true)
         .addField(" Time :", `\`${song.duration} Minutes \``, true)
+        .addField(" Volume :", `\`${queue.volume}%\``, true)
       //send the Embed into the Queue Channel
         return serverQueue.textChannel
         .send(newsong)
