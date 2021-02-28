@@ -38,7 +38,7 @@ Links
 
 .setFooter(`${message.author.tag}`)
    .setColor("RED");
-   message.react("<a:emoji_11:814035839956418570>")
+   message.react("<:emoji_4:815551907007430656>")
     return message.channel.send(helpEmbed).catch(console.error);
 
   }
