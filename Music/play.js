@@ -159,15 +159,15 @@ async execute(message, args, client) {
       serverQueue.songs.push(song);
       //the new song embed
       const newsong = new MessageEmbed()
-        .setTitle("<:emoji_5:813090579810484284>" + song.title)
+        .setTitle("<:emoji_3:815583549326360635>" + song.title)
         .setURL(song.url)
         .setThumbnail(`https://cdn.discordapp.com/attachments/796122909533405195/814811033126305812/avatar.png`)
         .setColor("RED")
         .setImage(thumb)
         .setThumbnail()
-        .addField(" Requested by :", `${message.author}`, true)
-        .addField(" Time :", `\`${song.duration} Minutes \``, true)
-        .addField(" Volume :", `\`${queue.volume}%\``, true)
+        .addField("<:emoji_4:815583574983966720> Requested by :", `${message.author}`, true)
+        .addField("<:emoji_6:815597861651611698> Time :", `\`${song.duration} Minutes \``, true)
+        .addField("<:emoji_5:815583611008843796> Volume :", `\`${queue.volume}%\``, true)
       //send the Embed into the Queue Channel
         return serverQueue.textChannel
         .send(newsong)
