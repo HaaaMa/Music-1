@@ -20,6 +20,7 @@ module.exports = {
     .setDescription(`
 
 **Reyna Help**
+
  User Commands
 \`.invite\` - \`.support\` - \`.about\`
 \`.ping\` - \`.prefix\` - \`.uptime\`
@@ -36,7 +37,7 @@ Links
 `)
 
 .setFooter(`${message.author.tag}`)
-   .setColor("BLUE");
+   .setColor("RED");
    message.react("<a:emoji_11:814035839956418570>")
     return message.channel.send(helpEmbed).catch(console.error);
 
