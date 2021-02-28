@@ -164,7 +164,6 @@ async execute(message, args, client) {
         .setThumbnail(`https://cdn.discordapp.com/attachments/796122909533405195/814811033126305812/avatar.png`)
         .setColor("RED")
         .setImage(thumb)
-        .setThumbnail()
         .addField("<:emoji_4:815583574983966720> Requested by :", `${message.author}`, true)
         .addField("<:emoji_6:815597861651611698> Time :", `\`${song.duration} Minutes \``, true)
         .addField("<:emoji_5:815583611008843796> Volume :", `\`${queue.volume}%\``, true)
