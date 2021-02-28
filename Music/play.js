@@ -80,7 +80,7 @@ async execute(message, args, client) {
         queueConstruct.connection = await channel.join();
         //send join message
         message.channel.send(new MessageEmbed().setColor("RED")
-          .setDescription(`** <:emoji_5:813090579810484284> Joined \`${channel.name}\` 📄 bound \`#${message.channel.name}\`**`)
+          .setDescription(`** <:emoji_4:815583574983966720> Joined \`${channel.name}\` 📄 bound \`#${message.channel.name}\`**`)
           .setFooter(`By: ${message.author.username}#${message.author.discriminator}`))
         //if its an url
         if (urlValid) { //send searching link
