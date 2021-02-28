@@ -161,15 +161,15 @@ module.exports = {
 
     try {
       const newsong = new MessageEmbed()
-        .setTitle("<:Playing:769665713124016128>"   +song.title)
+        .setTitle("<:emoji_2:815551614865244160>"   +song.title)
         .setURL(song.url)
         .setThumbnail(`https://cdn.discordapp.com/attachments/796122909533405195/814811033126305812/avatar.png`)
         .setColor("RED")
         .setImage(thumb)
         .setThumbnail()
-        .addField(" Requested by :", `${message.author}`, true)
-        .addField(" Time :", `\`${song.duration} Minutes \``, true)
-        .addField(" Volume :", `\`${queue.volume}%\``, true)
+        .addField("<:emoji_4:815551907007430656> Requested by :", `${message.author}`, true)
+        .addField("<:emoji_5:815560176576495657> Time :", `\`${song.duration} Minutes \``, true)
+        .addField("<:emoji_6:815560368457777162> Volume :", `\`${queue.volume}%\``, true)
 
 
       var playingMessage = await queue.textChannel.send(newsong);
