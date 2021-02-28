@@ -125,7 +125,7 @@ client.on("guildCreate" , DarkMan => {
    if (now < expirationTime) {
      const timeLeft = (expirationTime - now) / 1000;
      return message.reply(
-      new MessageEmbed().setColor("#c219d8")
+      new MessageEmbed().setColor("RED")
       .setTitle(`<:no:770326304473350145> Please wait \`${timeLeft.toFixed(1)} seconds\` before reusing the \`${prefix}${command.name}\`!`)    
      );
    }
@@ -136,7 +136,7 @@ client.on("guildCreate" , DarkMan => {
    command.execute(message, args, client);
  } catch (error) {
    console.error(error);
-   message.reply( new MessageEmbed().setColor("#c219d8")
+   message.reply( new MessageEmbed().setColor("RED")
    .setTitle(`<:no:770326304473350145> There was an error executing that command.`)).catch(console.error);
  }
 
