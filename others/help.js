@@ -20,15 +20,15 @@ module.exports = {
     .setDescription(`
 
  User Commands
-.invite - .support - .about
-.ping - .prefix - .uptime
+\`.invite\` - \`.support\` - \`.about\`
+\`.ping\` - \`.prefix\` - \`.uptime\`
 
 Music Commands
-.play - .skip - .skipto
-.stop - .volume - .nowplaying
-.shuffle - .search - .resume
-.remove - .queue - .filter
-.loop - .lyrics - .radio
+\`.play\` - \`.skip\` - \`.skipto\`
+\`.stop\` - \`.volume\` - \`.nowplaying\`
+\`.shuffle\` - \`.search\` - \`.resume\`
+\`.remove\` - \`.queue\` - \`.filter\`
+\`.loop\` - \`.lyrics\` - \`.radio\`
 Links
 [support](https://discord.gg/jcs4XwcExv)    -    [invite](https://discord.com/oauth2/authorize?client_id=806840212608909344&permissions=70346817&scope=bot)
 `)
