@@ -139,7 +139,7 @@
         .setDescription(`**<:emoji_3:815583549326360635> ${message.author} Check your \`direct messages\` for a list of Radio Stations!**`)
         );
         message.author.send(new MessageEmbed().setColor("RED")
-        .setDescription(`**👍 Sent from <#${message.channel.id}>**`))
+        .setDescription(`**<:emoji_3:815583549326360635> Sent from <#${message.channel.id}>**`))
         return message.author.send(resultsEmbed);
       }
     const { channel } = message.member.voice;
