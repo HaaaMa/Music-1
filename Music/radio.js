@@ -135,11 +135,11 @@
         return message.author.send(resultsEmbed);      
       //if no args
       if (args[0] == null) {
-        message.channel.send(    new MessageEmbed().setColor("RED")
-        .setDescription(`**<:emoji_3:815583549326360635> ${message.author} Check your \`direct messages\` for a list of Radio Stations!\**)
+        message.channel.send(    new MessageEmbed().setColor("#c219d8")
+        .setDescription(`**👍 ${message.author} Check your \`direct messages\` for a list of Radio Stations!**`)
         );
-        message.author.send(new MessageEmbed().setColor("RED")
-        .setDescription(`**<:emoji_3:815583549326360635> Sent from <#${message.channel.id}>**`))
+        message.author.send(new MessageEmbed().setColor("#c219d8")
+        .setDescription(`**👍 Sent from <#${message.channel.id}>**`))
         return message.author.send(resultsEmbed);
       }
     const { channel } = message.member.voice;
@@ -215,11 +215,11 @@
   queueConstruct.connection = await channel.join().catch(console.error);
   //Send info message for joining 
   if(!serverQueue)
-  message.channel.send(    new MessageEmbed().setColor("RED")
+  message.channel.send(    new MessageEmbed().setColor("#c219d8")
   .setDescription(`**👍 Joined \`${channel.name}\` 📄 bouned \`#${message.channel.name}\`**`)
   .setFooter(`${message.author.username}#${message.author.discriminator}`));
   //send Search something embed
-  message.channel.send(new MessageEmbed().setColor("RED")
+  message.channel.send(new MessageEmbed().setColor("#c219d8")
   .setDescription(`**<:youtube:769675858431705109> Searching 🔍 \`${Radiostations[i-1].split(" ")[0]}\`**`));
   //mute yourself
   await queueConstruct.connection.voice.setSelfDeaf(true);
@@ -252,7 +252,7 @@
     //the new song embed
     const newsong = new MessageEmbed()
       .setTitle("<:Playing:769665713124016128> " + song.title)
-      .setColor("RED")
+      .setColor("#c219d8")
       .setThumbnail(song.thumbnail)
       .setURL(song.url)
       .setDescription(`\`\`\`Has been added to the Queue.\`\`\``)
