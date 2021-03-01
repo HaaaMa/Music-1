@@ -18,7 +18,7 @@ module.exports = {
     let seconds = Math.floor(client.uptime / 1000) % 60;
     //react with approve emoji
     message.react("769665713124016128");
-    return message.channel.send(new MessageEmbed().setColor("RED").setTitle(`<:emoji_4:815583574983966720> \`Reyna-Uptime \`\n\n\`${days}d\` \`${hours}h\` \`${minutes}m\` \`${seconds}s\n\``));
+    return message.channel.send(new MessageEmbed().setColor("RED").setTitle(`<:emoji_4:815583574983966720>\`Reyna Uptime \`\n\n\`${days}d\` \`${hours}h\` \`${minutes}m\` \`${seconds}s\n\``));
 
 
   }
