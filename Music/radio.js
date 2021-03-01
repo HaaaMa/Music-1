@@ -135,11 +135,11 @@
         return message.author.send(resultsEmbed);      
       //if no args
       if (args[0] == null) {
-        message.channel.send(    new MessageEmbed().setColor("#c219d8")
-        .setDescription(`**👍 ${message.author} Check your \`direct messages\` for a list of Radio Stations!**`)
+        message.channel.send(    new MessageEmbed().setColor("RED")
+        .setDescription(`**<:emoji_3:815583549326360635> ${message.author} Check your \`direct messages\` for a list of Radio Stations!\**)
         );
-        message.author.send(new MessageEmbed().setColor("#c219d8")
-        .setDescription(`**👍 Sent from <#${message.channel.id}>**`))
+        message.author.send(new MessageEmbed().setColor("RED")
+        .setDescription(`**<:emoji_3:815583549326360635> Sent from <#${message.channel.id}>**`))
         return message.author.send(resultsEmbed);
       }
     const { channel } = message.member.voice;
