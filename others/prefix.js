@@ -23,23 +23,23 @@ module.exports = {
     message.react("769665713124016128");
 
     if(!args[0]) return message.channel.send(new MessageEmbed()
-    .setColor("RED")
+    .setColor("#FF0000")
     .setTitle(`Current Prefix: \`${prefix}\``)
     .setFooter('Please provide a new prefix')
     );
     if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply(new MessageEmbed()
-    .setColor("RED")
-    .setTitle(`<:no:770326304473350145> You don\'t have permission for this Command!`)
+    .setColor("#FF0000")
+    .setTitle(`You don\'t have permission for this Command!`)
     );
 
     if(args[1]) return message.channel.send(new MessageEmbed()
-    .setColor("RED")
-    .setTitle(`'<:no:770326304473350145> The prefix can\'t have two spaces'`));
+    .setColor("#FF0000")
+    .setTitle(`'The prefix can\'t have two spaces'`));
 
     db.set(`prefix_${message.guild.id}`, args[0])
 
     message.channel.send(new MessageEmbed()
-    .setColor("RED")
-    .setTitle(`<:emoji_6:812978533823414323> Successfully set new prefix to **\`${args[0]}\`**`))
+    .setColor("#FF0000")
+    .setTitle(`Successfully set new prefix to **\`${args[0]}\`**`))
   }
 }
