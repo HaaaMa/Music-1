@@ -67,30 +67,30 @@ async execute(message, args, client) {
       if (serverQueue) {
         //if its an url
         if (urlValid) { //send searching link
-          message.channel.send(new MessageEmbed().setColor("RED")
-            .setDescription(`** <:emoji_6:813090602135584840>  Searching <:emoji_1:815583474400493568> [\`LINK\`](${args.join(" ")})**`))
+          message.channel.send(new MessageEmbed().setColor("#c219d8")
+            .setDescription(`**<:youtube:769675858431705109> Searching 🔍 [\`LINK\`](${args.join(" ")})**`))
         //if not
         }
         else { //send searching TITLE
-          message.channel.send(new MessageEmbed().setColor("RED")
-            .setDescription(`** <:emoji_6:813090602135584840>  Searching <:emoji_1:815583474400493568> \`${args.join(" ")}\`**`))
+          message.channel.send(new MessageEmbed().setColor("#c219d8")
+            .setDescription(`**<:youtube:769675858431705109> Searching 🔍 \`${args.join(" ")}\`**`))
         }
       } else {
         //If nothing is playing join the channel
         queueConstruct.connection = await channel.join();
         //send join message
-        message.channel.send(new MessageEmbed().setColor("RED")
-          .setDescription(`** <:emoji_4:815583574983966720> Joined \`${channel.name}\` 📄 bound \`#${message.channel.name}\`**`)
+        message.channel.send(new MessageEmbed().setColor("#c219d8")
+          .setDescription(`**👍 Joined \`${channel.name}\` 📄 bound \`#${message.channel.name}\`**`)
           .setFooter(`By: ${message.author.username}#${message.author.discriminator}`))
         //if its an url
         if (urlValid) { //send searching link
-          message.channel.send(new MessageEmbed().setColor("RED")
-            .setDescription(`** <:emoji_6:813090602135584840> Searching <:emoji_1:815583474400493568> [\`LINK\`](${args.join(" ")})**`))
+          message.channel.send(new MessageEmbed().setColor("#c219d8")
+            .setDescription(`**:umbrella:  Searching 🔍 [\`LINK\`](${args.join(" ")})**`))
           //if not
         }
         else { //send searching TITLE
-          message.channel.send(new MessageEmbed().setColor("RED")
-            .setDescription(`** <:emoji_6:813090602135584840>  Searching <:emoji_1:815583474400493568> \`${args.join(" ")}\`**`))
+          message.channel.send(new MessageEmbed().setColor("#c219d8")
+            .setDescription(`**:umbrella:  Searching 🔍 \`${args.join(" ")}\`**`))
         }
         //Set selfdeaf and serverdeaf true
         queueConstruct.connection.voice.setSelfDeaf(true);
@@ -132,8 +132,8 @@ async execute(message, args, client) {
       }
     }
     //get the thumbnail
-    let thumb = "https://images-ext-2.discordapp.net/external/t3ipSrE8XlAptsIJbXnvoVEfxqAk8UMIrZeCSdHYNB0/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.png"
-    if (song.thumbnail === undefined) thumb = "https://images-ext-2.discordapp.net/external/t3ipSrE8XlAptsIJbXnvoVEfxqAk8UMIrZeCSdHYNB0/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.png";
+    let thumb = "https://cdn.discordapp.com/attachments/748095614017077318/769672148524335114/unknown.png"
+    if (song.thumbnail === undefined) thumb = "https://cdn.discordapp.com/attachments/748095614017077318/769672148524335114/unknown.png";
     else thumb = song.thumbnail.url;
     //if there is a server queue send that message!
     if (serverQueue) {
@@ -159,14 +159,14 @@ async execute(message, args, client) {
       serverQueue.songs.push(song);
       //the new song embed
       const newsong = new MessageEmbed()
-        .setTitle("<:emoji_3:815583549326360635>" + song.title)
+        .setTitle("<:Playing:769665713124016128> " + song.title)
+        .setColor("#c219d8")
+        .setThumbnail(thumb)
         .setURL(song.url)
-        .setThumbnail(`https://cdn.discordapp.com/attachments/796122909533405195/814811033126305812/avatar.png`)
-        .setColor("RED")
-        .setImage(thumb)
-        .addField("<:emoji_4:815583574983966720> Requested by :", `${message.author}`, true)
-        .addField("<:emoji_6:815597861651611698> Time :", `\`${song.duration} Minutes \``, true)
-        .addField("<:emoji_5:815583611008843796> Volume :", `\`${queue.volume}%\``, true)
+        .setDescription(`\`\`\`Has been added to the Queue.\`\`\``)
+        .addField("Estimated time until playing:", `\`${estimatedtime}\``, true)
+        .addField("Position in queue", `**\`${serverQueue.songs.length - 1}\`**`, true)
+        .setFooter(`Requested by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
       //send the Embed into the Queue Channel
         return serverQueue.textChannel
         .send(newsong)
