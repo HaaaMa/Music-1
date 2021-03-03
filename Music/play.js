@@ -68,29 +68,29 @@ async execute(message, args, client) {
         //if its an url
         if (urlValid) { //send searching link
           message.channel.send(new MessageEmbed().setColor("RED")
-            .setDescription(`**<:youtube:769675858431705109> Searching 🔍 [\`LINK\`](${args.join(" ")})**`))
+            .setDescription(`** <:emoji_6:813090602135584840> Searching <:emoji_1:815583474400493568> [\`LINK\`](${args.join(" ")})**`))
         //if not
         }
         else { //send searching TITLE
           message.channel.send(new MessageEmbed().setColor("RED")
-            .setDescription(`**<:youtube:769675858431705109> Searching 🔍 \`${args.join(" ")}\`**`))
+            .setDescription(`** <:emoji_6:813090602135584840> Searching <:emoji_1:815583474400493568> \`${args.join(" ")}\`**`))
         }
       } else {
         //If nothing is playing join the channel
         queueConstruct.connection = await channel.join();
         //send join message
         message.channel.send(new MessageEmbed().setColor("RED")
-          .setDescription(`**<:emoji_4:815583574983966720> Joined \`${channel.name}\` 📄 bound \`#${message.channel.name}\`**`)
+          .setDescription(`** <:emoji_2:815583500623282207> Joined \`${channel.name}\` 📄 bound \`#${message.channel.name}\`**`)
           .setFooter(`By: ${message.author.username}#${message.author.discriminator}`))
         //if its an url
         if (urlValid) { //send searching link
           message.channel.send(new MessageEmbed().setColor("RED")
-            .setDescription(`**:umbrella:  Searching 🔍 [\`LINK\`](${args.join(" ")})**`))
+            .setDescription(`** <:emoji_6:813090602135584840>  Searching <:emoji_1:815583474400493568> [\`LINK\`](${args.join(" ")})**`))
           //if not
         }
         else { //send searching TITLE
           message.channel.send(new MessageEmbed().setColor("RED")
-            .setDescription(`**:umbrella:  Searching 🔍 \`${args.join(" ")}\`**`))
+            .setDescription(`** <:emoji_6:813090602135584840>  Searching <:emoji_1:815583474400493568> \`${args.join(" ")}\`**`))
         }
         //Set selfdeaf and serverdeaf true
         queueConstruct.connection.voice.setSelfDeaf(true);
