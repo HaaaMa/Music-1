@@ -57,24 +57,24 @@ const search = args.join(" ");
     try {
       if (serverQueue) {
         if (urlValid) {
-          message.channel.send(new MessageEmbed().setColor("YELLOW")
+          message.channel.send(new MessageEmbed().setColor("#FF0000")
             .setDescription(`**<:emoji_49:814468558930182195> Searching <:emoji_75:815251307807375381> [\`LINK\`](${args.join(" ")})**`))
         }
         else {
-          message.channel.send(new MessageEmbed().setColor("YELLOW")
+          message.channel.send(new MessageEmbed().setColor("#FF0000")
             .setDescription(`**<:emoji_49:814468558930182195> Searching <:emoji_75:815251307807375381> \`${args.join(" ")}\`**`))
         }
       } else {
         queueConstruct.connection = await channel.join();
-        message.channel.send(new MessageEmbed().setColor("YELLOW")
+        message.channel.send(new MessageEmbed().setColor("#FF0000")
           .setDescription(`** <:emoji_67:815251304162394203> Joined \`${channel.name}\` 📄 bound \`#${message.channel.name}\`**`)
           .setFooter(`By: ${message.author.username}#${message.author.discriminator}`))
         if (urlValid) { 
-          message.channel.send(new MessageEmbed().setColor("YELLOW")
+          message.channel.send(new MessageEmbed().setColor("#FF0000")
             .setDescription(`**<:emoji_49:814468558930182195> Searching <:emoji_75:815251307807375381> [\`LINK\`](${args.join(" ")})**`))
         }
         else {
-          message.channel.send(new MessageEmbed().setColor("YELLOW")
+          message.channel.send(new MessageEmbed().setColor("#FF0000")
             .setDescription(`**<:emoji_49:814468558930182195> Searching <:emoji_75:815251307807375381> \`${args.join(" ")}\`**`))
         }
         queueConstruct.connection.voice.setSelfDeaf(true);
@@ -112,8 +112,8 @@ catch {
         return attentionembed(message, error);
       }
     }
-    let thumb = "https://cdn.discordapp.com/attachments/748095614017077318/769672148524335114/unknown.png"
-    if (song.thumbnail === undefined) thumb = "https://cdn.discordapp.com/attachments/748095614017077318/769672148524335114/unknown.png";
+    let thumb = "https://cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.png?size=1024"
+    if (song.thumbnail === undefined) thumb = "https://cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.png?size=1024";
     else thumb = song.thumbnail.url;
     if (serverQueue) {
       let estimatedtime = Number(0);
