@@ -32,7 +32,7 @@ async execute(message, args, client) {
     //If no args return
     if (!args.length)
       return attentionembed(message, `Usage: ${message.client.prefix}play <YouTube URL | Video Name | Soundcloud URL>`);
-    message.react("<:emoji_74:815251307635015731>").catch(console.error);
+    message.react("<:emoji_4:815583574983966720>").catch(console.error);
     const permissions = channel.permissionsFor(message.client.user);
     if (!permissions.has("CONNECT"))
       return attentionembed(message, "I need permissions to join your channel!");
@@ -58,11 +58,11 @@ const search = args.join(" ");
       if (serverQueue) {
         if (urlValid) {
           message.channel.send(new MessageEmbed().setColor("#FF0000")
-            .setDescription(`**<:emoji_49:814468558930182195> Searching <:emoji_1:815583474400493568> [\`LINK\`](${args.join(" ")})**`))
+            .setDescription(`** <:emoji_6:813090602135584840> Searching <:emoji_1:815583474400493568> [\`LINK\`](${args.join(" ")})**`))
         }
         else {
           message.channel.send(new MessageEmbed().setColor("#FF0000")
-            .setDescription(`**<:emoji_49:814468558930182195> Searching <:emoji_1:815583474400493568> \`${args.join(" ")}\`**`))
+            .setDescription(`** <:emoji_6:813090602135584840> Searching <:emoji_1:815583474400493568> \`${args.join(" ")}\`**`))
         }
       } else {
         queueConstruct.connection = await channel.join();
@@ -71,11 +71,11 @@ const search = args.join(" ");
           .setFooter(`By: ${message.author.username}#${message.author.discriminator}`))
         if (urlValid) { 
           message.channel.send(new MessageEmbed().setColor("#FF0000")
-            .setDescription(`** <:emoji_6:813090602135584840> Searching <:emoji_1:815583474400493568> [\`LINK\`](${args.join(" ")})**`))
+            .setDescription(`**<:emoji_6:813090602135584840> Searching <:emoji_1:815583474400493568> [\`LINK\`](${args.join(" ")})**`))
         }
         else {
           message.channel.send(new MessageEmbed().setColor("#FF0000")
-            .setDescription(`**<:emoji_49:814468558930182195> Searching <:emoji_1:815583474400493568> \`${args.join(" ")}\`**`))
+            .setDescription(`**<:emoji_6:813090602135584840> Searching <:emoji_1:815583474400493568> \`${args.join(" ")}\`**`))
         }
         queueConstruct.connection.voice.setSelfDeaf(true);
         queueConstruct.connection.voice.setDeaf(true);
