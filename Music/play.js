@@ -58,16 +58,16 @@ const search = args.join(" ");
       if (serverQueue) {
         if (urlValid) {
           message.channel.send(new MessageEmbed().setColor("#FF0000")
-            .setDescription(`** <:emoji_6:813090602135584840> Searching <:emoji_1:815583474400493568> [\`LINK\`](${args.join(" ")})**`))
+            .setDescription(`**<:emoji_6:813090602135584840> Searching <:emoji_1:815583474400493568> [\`LINK\`](${args.join(" ")})**`))
         }
         else {
           message.channel.send(new MessageEmbed().setColor("#FF0000")
-            .setDescription(`** <:emoji_6:813090602135584840> Searching <:emoji_1:815583474400493568> \`${args.join(" ")}\`**`))
+            .setDescription(`**<:emoji_6:813090602135584840> Searching <:emoji_1:815583474400493568> \`${args.join(" ")}\`**`))
         }
       } else {
         queueConstruct.connection = await channel.join();
         message.channel.send(new MessageEmbed().setColor("#FF0000")
-          .setDescription(`** <:emoji_2:815583500623282207> Joined \`${channel.name}\` 📄 bound \`#${message.channel.name}\`**`)
+          .setDescription(`**<:emoji_2:815583500623282207> Joined \`${channel.name}\` 📄 bound \`#${message.channel.name}\`**`)
           .setFooter(`By: ${message.author.username}#${message.author.discriminator}`))
         if (urlValid) { 
           message.channel.send(new MessageEmbed().setColor("#FF0000")
