@@ -88,7 +88,7 @@ client.on(`message`, async (message) => {
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("RED")
+    .setColor("#FF0000")
     .setDescription(saymsg)
     .setFooter("Reyna", client.user.displayAvatarURL())
     //delete the Command
@@ -127,8 +127,8 @@ client.on("guildCreate" , DarkMan => {
    if (now < expirationTime) {
      const timeLeft = (expirationTime - now) / 1000;
      return message.reply(
-      new MessageEmbed().setColor("RED")
-      .setTitle(`<:emoji_4:815583574983966720> \`Please wait ${timeLeft.toFixed(1)} seconds before reusing the \`${prefix}${command.name}\``)    
+      new MessageEmbed().setColor("#FF0000")
+      .setTitle(`<:emoji_4:815583574983966720> \`Please wait ${timeLeft.toFixed(1)} seconds before reusing the \`${prefix}${command.name}\`)    
      );
    }
  }
@@ -138,7 +138,7 @@ client.on("guildCreate" , DarkMan => {
    command.execute(message, args, client);
  } catch (error) {
    console.error(error);
-   message.reply( new MessageEmbed().setColor("RED")
+   message.reply( new MessageEmbed().setColor("#FF0000")
    .setTitle(`<:emoji_4:815583574983966720> There was an error executing that command.`)).catch(console.error);
  }
 
