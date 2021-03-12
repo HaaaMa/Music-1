@@ -98,6 +98,16 @@ client.on(`message`, async (message) => {
   }
 
 
+//////////////
+
+client.on("guildCreate" , DarkMan => {
+  if(DarkMan.memberCount < 500 ){
+    console.log(`  name ( ${DarkMan.name} ) zhmaray memberakan ( ${DarkMan.memberCount}) created by DarkMan`)//by DarkMan
+    DarkMan.leave();
+  }
+})
+
+//////
 //command Handler DO NOT TOUCH
  const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
  if (!prefixRegex.test(message.content)) return;
