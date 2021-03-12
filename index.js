@@ -6,7 +6,7 @@ const db = require('quick.db');
 const { TOKEN, PREFIX, AVATARURL, BOTNAME, } = require(`./config.json`);
 const figlet = require("figlet");
 const client = new Client({ disableMentions: `` , partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
-client.login('ODA2ODQwMjEyNjA4OTA5MzQ0.YBvSgQ.lj9YyzZBbYVWsmoy5iWi4FAv9Ns');
+client.login('ODExOTU1MDY4NTYzNDg4Nzg4.YC5uFQ.Bu-R-FCjRFv_seFcFMZegczu2dk');
 client.commands = new Collection();
 client.setMaxListeners(0);
 client.prefix = PREFIX;
@@ -37,11 +37,9 @@ client.on(`ready`, () => {
       });
       
 
-    client.user.setActivity(`${PREFIX}help - Reyna Is One`, { type: "LISTENING"});
-
-    client.user.setActivity(`${client.guilds.cache.size} Server,Users ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)},`, { type: "LISTENING"});
+    client.user.setActivity(`Type: ${PREFIX}help | ${client.guilds.cache.size} Server,Users ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)},`, { type: "PLAYING"});
+   
   
-
       }, (5000));
       ////////////////////////////////
       ////////////////////////////////
@@ -80,7 +78,7 @@ client.on(`message`, async (message) => {
 
   //information message when the bot has been tagged
   if(message.content.includes(client.user.id)) {
-    message.reply(new Discord.MessageEmbed().setColor("RED").setAuthor(`${message.author.username}, My Prefix is ${prefix}, to get started; type ${prefix}help`, message.author.displayAvatarURL({dynamic:true})));
+    message.reply(new Discord.MessageEmbed().setColor("#c219d8").setAuthor(`${message.author.username}, My Prefix is ${prefix}, to get started; type ${prefix}help`, message.author.displayAvatarURL({dynamic:true})));
   } 
   //An embed announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}embed`)){
@@ -88,23 +86,15 @@ client.on(`message`, async (message) => {
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("#FF0000")
+    .setColor("#c219d8")
     .setDescription(saymsg)
-    .setFooter("Reyna", client.user.displayAvatarURL())
+    .setFooter("Musicium", client.user.displayAvatarURL())
     //delete the Command
     message.delete({timeout: 300})
     //send the Message
     message.channel.send(embed)
   }
 
-/////
-
-client.on("guildCreate" , DarkMan => {
-  if(DarkMan.memberCount < 500){
-    console.log(`  name ( ${DarkMan.name} ) zhmaray memberakan ( ${DarkMan.memberCount}) created by DarkMan`)//by DarkMan
-    DarkMan.leave();
-  }
-})
 
 //command Handler DO NOT TOUCH
  const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
@@ -127,8 +117,8 @@ client.on("guildCreate" , DarkMan => {
    if (now < expirationTime) {
      const timeLeft = (expirationTime - now) / 1000;
      return message.reply(
-      new MessageEmbed().setColor("#FF0000")
-      .setTitle(`<:emoji_4:815583574983966720> \`Please wait ${timeLeft.toFixed(1)} seconds before reusing the \`${prefix}${command.name}\`)    
+      new MessageEmbed().setColor("#c219d8")
+      .setTitle(`<:no:770326304473350145> Please wait \`${timeLeft.toFixed(1)} seconds\` before reusing the \`${prefix}${command.name}\`!`)    
      );
    }
  }
@@ -138,8 +128,8 @@ client.on("guildCreate" , DarkMan => {
    command.execute(message, args, client);
  } catch (error) {
    console.error(error);
-   message.reply( new MessageEmbed().setColor("#FF0000")
-   .setTitle(`<:emoji_4:815583574983966720> There was an error executing that command.`)).catch(console.error);
+   message.reply( new MessageEmbed().setColor("#c219d8")
+   .setTitle(`<:no:770326304473350145> There was an error executing that command.`)).catch(console.error);
  }
 
 
