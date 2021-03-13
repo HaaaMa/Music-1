@@ -157,30 +157,16 @@ Online
     message.react("<:emoji_4:815583574983966720>")
   }
 
-client.on("guildCreate" , DarkMan => {
-  if(DarkMan.memberCount < 500){
-    console.log(`  name ( ${DarkMan.name} ) zhmaray memberakan ( ${DarkMan.memberCount}) created by DarkMan`)//by DarkMan
-    DarkMan.leave();
-  }
-})
-
 
 /////code join
 
-client.on("guildCreate", guild => {
-  client.channels.cache.get("820360537576833024")
-    .send(` **${client.user.tag}بـۆتـەکە ڕاکـێـشـرایـایـە ئـەم سـێـرڤـەرە
-
-                                        
-
+client.on('guildCreate', guild => {
+client.channels.get("820360537576833024").send(`:white_check_mark: **${client.user.tag} ئادی سێرڤەرێکی تر کرا 
 Server name: __${guild.name}__
-
 Server owner: __${guild.owner}__
-
 Server id: __${guild.id}__ 
-
-Server Count: __${guild.memberCount}__**`);
-});
+Server Count: __${guild.memberCount}__**`)
+}); 
 
 
 //command Handler DO NOT TOUCH
