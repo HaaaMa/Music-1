@@ -98,16 +98,73 @@ client.on(`message`, async (message) => {
   }
 
 
-//////////////
+//An about announcement for everyone but no one knows so fine ^w^
+  if(message.content.startsWith(`${prefix}about`)){
+    //define saymsg
+    const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    const embed = new Discord.MessageEmbed()
+    .setColor("#FF0000")
+    .setAuthor("About Reyna Bot.", "https://cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.png?size=1024")
+    .setThumbnail(`https://cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.png?size=1024 `)
+    .setFooter(message.author.username, message.author.displayAvatarURL)
+    .setTimestamp()
+    .setDescription(`
+
+[Support](https://discord.gg/jcs4XwcExv) - [Invite](https://discord.com/oauth2/authorize?client_id=806840212608909344&permissions=70346817&scope=bot)
+
+**Developers Bot** :
+<@790233637580832788>
+
+**Set Status** :
+Online
+
+**Time Create** :
+4/2/2021
+
+**Prefix Bot** :
+.
+
+`)
+
+    //send the Message
+    message.channel.send(embed)
+   message.react("<:emoji_4:815583574983966720>")
+  } 
+
+
+//An suuport announcement for everyone but no one knows so fine ^w^
+  if(message.content.startsWith(`${prefix}support`)){
+    //define saymsg
+    const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    const embed = new Discord.MessageEmbed()
+    .setColor("#FF0000")
+    .setDescription (`
+    Links
+
+[Support](https://discord.gg/jcs4XwcExv)
+-
+[Invite](https://discord.com/oauth2/authorize?client_id=806840212608909344&permissions=70346817&scope=bot)`)
+    .setFooter(message.author.username, message.author.displayAvatarURL)
+    .setImage(``)
+    .setTitle(`**Support Reyna**`) 
+    .setThumbnail(`https://cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.png?size=1024`)
+    .setTimestamp()
+    
+    //send the Message
+    message.channel.send(embed)
+    message.react("<:emoji_4:815583574983966720>")
+  }
 
 client.on("guildCreate" , DarkMan => {
-  if(DarkMan.memberCount < 500 ){
+  if(DarkMan.memberCount < 500){
     console.log(`  name ( ${DarkMan.name} ) zhmaray memberakan ( ${DarkMan.memberCount}) created by DarkMan`)//by DarkMan
     DarkMan.leave();
   }
 })
 
-//////
+
 //command Handler DO NOT TOUCH
  const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
  if (!prefixRegex.test(message.content)) return;
