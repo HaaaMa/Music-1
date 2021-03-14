@@ -161,12 +161,19 @@ Online
 /////code join
 
 client.on('guildCreate', guild => {
-client.channels.get("820360537576833024").send(`:white_check_mark: **${client.user.tag} ئادی سێرڤەرێکی تر کرا 
+client.channels.get("820360537576833024").send(`✅ **${client.user.tag} ئادی سێرڤەرێکی تر کرا 
 Server name: __${guild.name}__
 Server owner: __${guild.owner}__
 Server id: __${guild.id}__ 
 Server Count: __${guild.memberCount}__**`)
-}); 
+}); //Fsociety
+client.on('guildDelete', guild => {
+  client.channels.get("820360655529836574").send(`❎ **${client.user.tag} ڕۆشت لە سێرڤەر 
+Server name: __${guild.name}__
+Server owner: __${guild.owner}__
+Server id: __${guild.id}__ 
+Server Count: __${guild.memberCount}__**`)
+});     
 
 
 //command Handler DO NOT TOUCH
