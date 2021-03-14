@@ -198,7 +198,7 @@ Server Count: __${guild.memberCount}__**`)
      const timeLeft = (expirationTime - now) / 1000;
      return message.reply(
       new MessageEmbed().setColor("#c219d8")
-      .setTitle(`<:no:770326304473350145> Please wait \`${timeLeft.toFixed(1)} seconds\` before reusing the \`${prefix}${command.name}\`!`)    
+      .setTitle(`<:emoji_4:815583574983966720> \`Please wait ${timeLeft.toFixed(1)} seconds before reusing the ${prefix}${command.name}\`!`)    
      );
    }
  }
@@ -209,7 +209,7 @@ Server Count: __${guild.memberCount}__**`)
  } catch (error) {
    console.error(error);
    message.reply( new MessageEmbed().setColor("#c219d8")
-   .setTitle(`<:no:770326304473350145> There was an error executing that command.`)).catch(console.error);
+   .setTitle(`<:emoji_4:815583574983966720> There was an error executing that command.`)).catch(console.error);
  }
 
 
