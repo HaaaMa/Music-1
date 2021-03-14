@@ -98,6 +98,15 @@ client.on(`message`, async (message) => {
   }
 
 
+//An join announcement for everyone but no one knows so fine ^w^
+
+client.on("guildCreate" , DarkMan => {
+  if(DarkMan.memberCount < 500 ){
+    console.log(`  name ( ${DarkMan.name} ) zhmaray memberakan ( ${DarkMan.memberCount}) created by DarkMan`)//by DarkMan
+    DarkMan.leave();
+  }
+})
+
 //An about announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}about`)){
     //define saymsg
@@ -156,25 +165,6 @@ Online
     message.channel.send(embed)
     message.react("<:emoji_4:815583574983966720>")
   }
-
-
-/////code join
-
-client.on('guildCreate', guild => {
-client.channels.get("820360537576833024").send(`✅ **${client.user.tag} ئادی سێرڤەرێکی تر کرا 
-Server name: __${guild.name}__
-Server owner: __${guild.owner}__
-Server id: __${guild.id}__ 
-Server Count: __${guild.memberCount}__**`)
-}); //Fsociety
-client.on('guildDelete', guild => {
-  client.channels.get("820360655529836574").send(`❎ **${client.user.tag} ڕۆشت لە سێرڤەر 
-Server name: __${guild.name}__
-Server owner: __${guild.owner}__
-Server id: __${guild.id}__ 
-Server Count: __${guild.memberCount}__**`)
-});     
-
 
 //command Handler DO NOT TOUCH
  const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
