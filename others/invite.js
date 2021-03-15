@@ -19,3 +19,9 @@ module.exports = {
     .setFooter("And enjoy listening to music!", "https://cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.png?size=1024"));
   }
 }
+
+
+   //send the Message
+    message.channel.send(embed)
+   message.react("<:emoji_4:815583574983966720>")
+  } 
