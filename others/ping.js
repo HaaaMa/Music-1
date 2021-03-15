@@ -18,3 +18,9 @@ module.exports = {
     message.reply(new MessageEmbed().setColor("#FF0000").setTitle(":ping_pong: `" + client.ws.ping + "ms`"));
   }
 }
+
+
+  //send the Message
+    message.channel.send(embed)
+   message.react("<:emoji_4:815583574983966720>")
+  } 
