@@ -20,7 +20,7 @@ module.exports = {
     if(prefix === null) prefix = PREFIX;
 
     //react with approve emoji
-    message.react("769665713124016128");
+    message.react("<:emoji_4:815583574983966720>");
 
     if(!args[0]) return message.channel.send(new MessageEmbed()
     .setColor("#FF0000")
