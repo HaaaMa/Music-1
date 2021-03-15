@@ -23,3 +23,11 @@ module.exports = {
 
   }
 }
+
+
+
+
+  //send the Message
+    message.channel.send(embed)
+   message.react("<:emoji_4:815583574983966720>")
+  } 
