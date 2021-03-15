@@ -162,9 +162,9 @@ Online
     .setTimestamp()
     
     //send the Message
-    message.channel.send(embed)
-    message.react("<:emoji_4:815583574983966720>")
-  }
+    message.channel.send(embed)
+   message.react("<:emoji_4:815583574983966720>")
+  } 
 
 //command Handler DO NOT TOUCH
  const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
