@@ -168,7 +168,7 @@ Online
 
 ///code lock
 
-client.on('message', message =>{
+if.on('message', message =>{
 if(message.content === prefix +"lock"){
 if(!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply(' ** You dont have `MANAGE_CHANNELS` permission **');
 let everyone = message.guild.roles.cache.find(zombie => zombie.name === '@everyone');
