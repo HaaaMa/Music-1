@@ -166,35 +166,6 @@ Online
    message.react("<:emoji_4:815583574983966720>")
   } 
 
-///log kick u ban u left server id 
-
-client.on("guildCreate", guild => {
-  let channel = client.channels.cache.get("820360537576833024");
-  let embed = new MessageEmbed()
-  .setColor("RANDOM")
-  .setAuthor(client.user.username, client.user.avatarURL())
-  .setTitle(` ✅  **I Joined This Server!**`)
-  .addField("`  Server Name:  `",`  **${guild.name}** `)
-  .addField("` Server Owner: `",`   **__${guild.owner}__** `)
-  .addField("` Server Id: `",`  **${guild.id}**  `)
-  .addField("` Member Count: `",`  **__${guild.memberCount}__** `)
-  .setFooter(`${client.user.tag}`);
-  channel.send(embed);
-});
-client.on("guildDelete", guild => {
-  let channel = client.channels.cache.get("820360655529836574");
-  let embed = new MessageEmbed()
-  .setColor("RANDOM")
-  .setAuthor(client.user.username, client.user.avatarURL())
-  .setTitle(` ❌  ** Kicked Me In This Server!**`)
-  .addField("` Server Name:  `",`  **${guild.name}** `)
-  .addField("` Server Owner: `",`   **__${guild.owner}__** `)
-  .addField("` Server Id: `",`  **${guild.id}**  `)
-  .addField("` Member Count: `",`  **__${guild.memberCount}__** `)
-  .setFooter(`${client.user.tag}`);
-  channel.send(embed);
-});
-
 //command Handler DO NOT TOUCH
  const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
  if (!prefixRegex.test(message.content)) return;
