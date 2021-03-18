@@ -166,26 +166,6 @@ Online
    message.react("<:emoji_4:815583574983966720>")
   } 
 
-///code lock
-
-if.on('message', message =>{
-if(message.content === prefix +"lock"){
-if(!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply(' ** You dont have `MANAGE_CHANNELS` permission **');
-let everyone = message.guild.roles.cache.find(zombie => zombie.name === '@everyone');
-        message.channel.createOverwrite(everyone, {
-               SEND_MESSAGES: false
-            }).then(() => {
-                                const embed = new Discord.MessageEmbed()
-                .setColor("#48ff00")
-               .setThumbnail(message.guild.iconURL())
-                .setDescription(`> ${message.channel}`)
-                .setTitle("locked channel🔒")
-                .setFooter(`By ${message.author.username}`)
-                message.channel.send(embed)
-                })
-}
-});
-
 //command Handler DO NOT TOUCH
  const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
  if (!prefixRegex.test(message.content)) return;
