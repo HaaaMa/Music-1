@@ -165,7 +165,7 @@ module.exports = {
         .setURL(song.url)
         .setColor("#FF0000")
         .setImage(thumb)
-        .setThumbnail(`https://cdn.discordapp.com/attachments/802194967073652768/822475932576383028/PicsArt_03-13-08.15.22.jpg`)
+        .setThumbnail(`https://cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.png?size=1024`)
         .addField("<:emoji_4:815583574983966720> Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
         .addField("<:emoji_6:815597861651611698> Length:", `\`${song.duration} Minutes\``, true)
         .addField("<:emoji_5:815583611008843796> Volume:", `\`100\``, true)    
