@@ -32,7 +32,7 @@ async execute(message, args, client) {
     //If no args return
     if (!args.length)
       return attentionembed(message, `Usage: ${message.client.prefix}play <YouTube URL | Video Name | Soundcloud URL>`);
-    message.react("<:emoji_4:815583574983966720>").catch(console.error);
+    message.react("<:emoji_74:815251307635015731>").catch(console.error);
     const permissions = channel.permissionsFor(message.client.user);
     if (!permissions.has("CONNECT"))
       return attentionembed(message, "I need permissions to join your channel!");
@@ -57,25 +57,25 @@ const search = args.join(" ");
     try {
       if (serverQueue) {
         if (urlValid) {
-          message.channel.send(new MessageEmbed().setColor("#FF0000")
-            .setDescription(`**<:emoji_6:813090602135584840> Searching <:emoji_1:815583474400493568> [\`LINK\`](${args.join(" ")})**`))
+          message.channel.send(new MessageEmbed().setColor("YELLOW")
+            .setDescription(`**<:emoji_49:814468558930182195> Searching <:emoji_75:815251307807375381> [\`LINK\`](${args.join(" ")})**`))
         }
         else {
-          message.channel.send(new MessageEmbed().setColor("#FF0000")
-            .setDescription(`**<:emoji_6:813090602135584840> Searching <:emoji_1:815583474400493568> \`${args.join(" ")}\`**`))
+          message.channel.send(new MessageEmbed().setColor("YELLOW")
+            .setDescription(`**<:emoji_49:814468558930182195> Searching <:emoji_75:815251307807375381> \`${args.join(" ")}\`**`))
         }
       } else {
         queueConstruct.connection = await channel.join();
-        message.channel.send(new MessageEmbed().setColor("#FF0000")
-          .setDescription(`**<:emoji_2:815583500623282207> Joined \`${channel.name}\` 📄 bound \`#${message.channel.name}\`**`)
+        message.channel.send(new MessageEmbed().setColor("YELLOW")
+          .setDescription(`** <:emoji_67:815251304162394203> Joined \`${channel.name}\` 📄 bound \`#${message.channel.name}\`**`)
           .setFooter(`By: ${message.author.username}#${message.author.discriminator}`))
         if (urlValid) { 
-          message.channel.send(new MessageEmbed().setColor("#FF0000")
-            .setDescription(`**<:emoji_6:813090602135584840> Searching <:emoji_1:815583474400493568> [\`LINK\`](${args.join(" ")})**`))
+          message.channel.send(new MessageEmbed().setColor("YELLOW")
+            .setDescription(`**<:emoji_49:814468558930182195> Searching <:emoji_75:815251307807375381> [\`LINK\`](${args.join(" ")})**`))
         }
         else {
-          message.channel.send(new MessageEmbed().setColor("#FF0000")
-            .setDescription(`**<:emoji_6:813090602135584840> Searching <:emoji_1:815583474400493568> \`${args.join(" ")}\`**`))
+          message.channel.send(new MessageEmbed().setColor("YELLOW")
+            .setDescription(`**<:emoji_49:814468558930182195> Searching <:emoji_75:815251307807375381> \`${args.join(" ")}\`**`))
         }
         queueConstruct.connection.voice.setSelfDeaf(true);
         queueConstruct.connection.voice.setDeaf(true);
@@ -112,8 +112,8 @@ catch {
         return attentionembed(message, error);
       }
     }
-    let thumb = "https://cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.png?size=1024"
-    if (song.thumbnail === undefined) thumb = "https://cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.png?size=1024";
+    let thumb = "https://cdn.discordapp.com/attachments/748095614017077318/769672148524335114/unknown.png"
+    if (song.thumbnail === undefined) thumb = "https://cdn.discordapp.com/attachments/748095614017077318/769672148524335114/unknown.png";
     else thumb = song.thumbnail.url;
     if (serverQueue) {
       let estimatedtime = Number(0);
@@ -135,15 +135,15 @@ catch {
       }
 serverQueue.songs.push(song);
       const newsong = new MessageEmbed()
-        .setTitle(""+song.title)
+        .setTitle("<:emoji_65:815251304070905857> "+song.title)
         .setURL(song.url)
-        .setColor("#FF0000")
+        .setColor("YELLOW")
         .setImage(thumb)
-        .setThumbnail(`https://cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.png?size=1024`)
-         .addField("Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
-        .addField("Length:", `\`${song.duration} Minutes\``, true)
-        .addField("Volume:", `\`100\``, true)
-        .addField("Position in queue:", `**\`${serverQueue.songs.length - 1}\`**`, true)
+        .setThumbnail(`https://media.discordapp.net/attachments/815252825012568085/815266512414703656/image0.png`)
+         .addField("<:emoji_74:815251307635015731> Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
+        .addField("<a:emoji_30:815251307794399252> Length:", `\`${song.duration} Minutes\``, true)
+        .addField("<:emoji_72:815251305874194482> Volume:", `\`100\``, true)
+        .addField("<:emoji_73:815251306268328000> Position in queue:", `**\`${serverQueue.songs.length - 1}\`**`, true)
         return serverQueue.textChannel
         .send(newsong)
         .catch(console.error);
