@@ -170,11 +170,11 @@ Online
 
 client.on("guildCreate", guild => {
   let channel = client.channels.cache.get("820360537576833024");
-  let embed = new MessageEmbed().setColor("#61eac2")
+  let embed = new MessageEmbed().setColor("#FF0000")
   .setAuthor(client.user.username, client.user.avatarURL())
   .setTitle(  `✅  **I Joined This Server!**`)
   .addField(" ``` Server Name: ``` ", ` **${guild.name}**` )
-  .addField(" Server Owner: ",  ` **__${guild.owner}__**`  )
+  .addField("``` Server Owner: ```",  ` **__${guild.owner}__**`  )
   .addField("``` Server Id: ```", ` **${guild.id}**`  )
   .addField("``` Member Count: ```", ` **__${guild.memberCount}__**` )
   .setFooter(`${client.user.tag}`);
@@ -183,7 +183,7 @@ client.on("guildCreate", guild => {
 client.on("guildDelete", guild => {
   let channel = client.channels.cache.get("820360537576833024");
   let embed = new MessageEmbed()
-  .setColor("#61eac2")
+  .setColor("#FF0000")
   .setAuthor(client.user.username, client.user.avatarURL())
   .setTitle( `❌  ** Kicked Me In This Server!**`)
   .addField(" ``` Server Name: ``` ", ` **${guild.name}**` )
@@ -215,7 +215,7 @@ client.on("guildDelete", guild => {
    if (now < expirationTime) {
      const timeLeft = (expirationTime - now) / 1000;
      return message.reply(
-      new MessageEmbed().setColor("#c219d8")
+      new MessageEmbed().setColor("#FF0000")
       .setTitle(`<:emoji_4:815583574983966720> \`Please wait ${timeLeft.toFixed(1)} seconds before reusing the ${prefix}${command.name}\`!`)    
      );
    }
@@ -226,7 +226,7 @@ client.on("guildDelete", guild => {
    command.execute(message, args, client);
  } catch (error) {
    console.error(error);
-   message.reply( new MessageEmbed().setColor("#c219d8")
+   message.reply( new MessageEmbed().setColor("#FF0000")
    .setTitle(`<:emoji_4:815583574983966720> There was an error executing that command.`)).catch(console.error);
  }
 
