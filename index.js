@@ -88,7 +88,7 @@ client.on(`message`, async (message) => {
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("#c219d8")
+    .setColor("#FF0000")
     .setDescription(saymsg)
     .setFooter("Reyna", client.user.displayAvatarURL())
     //delete the Command
