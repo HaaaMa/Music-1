@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const { MessageEmbed } = require("discord.js");
-const Color = `RANDOM`;
+const Color = `#FF0000`;
 
 module.exports = {
   name: "se",
@@ -20,8 +20,8 @@ module.exports = {
       
       const Added = new MessageEmbed()
         .setTitle("Emoji Converter")
-        .setColor("#FC00FF")
-        .addField('<a:links:813729922643263558>```Link```', `[Click Me](${Link})`)
+        .setColor("#FF0000")
+        .addField('<:emoji_3:815583549326360635>```Link```', `[Click Me](${Link})`)
         .setImage(Link
         );
       return message.channel.send(Added);
