@@ -115,7 +115,7 @@ client.on("guildCreate" , DarkMan => {
     const embed = new Discord.MessageEmbed()
     .setColor("#FF0000")
     .setAuthor("About Reyna Bot.", "https://cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.png?size=1024")
-    .setThumbnail(`https://cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.png?size=1024 `)
+    .setThumbnail(`https://cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.png?size=1024`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setTimestamp()
     .setDescription(`
