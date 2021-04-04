@@ -24,10 +24,10 @@ module.exports = {
 🔒 Locked Channel
 Channel Name : <#${message.channel.id}>
 Locked By : <@${message.author.id}>
-Channel Status : Send Message <a:close:813455155991019543>
+Channel Status : Send Message
 
 `)
-   .setColor("#FC00FF");
+   .setColor("#FF0000");
    await message.channel.send(embed);
 }
 }
