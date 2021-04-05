@@ -138,7 +138,7 @@ serverQueue.songs.push(song);
         .setTitle("<:emoji_3:815583549326360635>"+song.title)
         .setURL(song.url)
         .setColor("YELLOW")
-        .setImage(thumb)
+        .setThumbnail(thumb)
         .setThumbnail(`https://media.discordapp.net/attachments/815252825012568085/815266512414703656/image0.png`)
          .addField("<:emoji_4:815583574983966720> Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
         .addField("<:emoji_6:815597861651611698> Length:", `\`${song.duration} Minutes\``, true)
