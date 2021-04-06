@@ -15,8 +15,8 @@ module.exports = {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
-    .setThumbnail(`https://cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.png?size=1024`)
-    .setTitle(`**Reyna Help**`)
+    .setThumbnail(`https://cdn.discordapp.com/avatars/758785943426564187/0d2e89ab452cb53f5cb7eaf14295470b.png?size=2048`)
+    .setTitle(`**Show Bot**`)
     .setDescription(`
 
 **User Commands**
@@ -35,8 +35,8 @@ Links
 `)
 
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-   .setColor("#FF0000");
-   message.react("<:emoji_4:815583574983966720>")
+   .setColor("#146DF6");
+   message.react("✅")
     return message.channel.send(helpEmbed).catch(console.error);
 
   }
