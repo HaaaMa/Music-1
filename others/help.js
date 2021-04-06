@@ -16,7 +16,7 @@ module.exports = {
 
     let helpEmbed = new MessageEmbed()
     .setThumbnail(`https://cdn.discordapp.com/avatars/758785943426564187/0d2e89ab452cb53f5cb7eaf14295470b.png?size=2048`)
-    .setAuthor(client.user.username,client.user.avatarURL())
+    .setAuthor(`Show Bot`, `https://cdn.discordapp.com/avatars/758785943426564187/0d2e89ab452cb53f5cb7eaf14295470b.png?size=2048`)
     .setDescription(`
 
 **User Commands**
