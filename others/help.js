@@ -16,7 +16,7 @@ module.exports = {
 
     let helpEmbed = new MessageEmbed()
     .setThumbnail(`https://cdn.discordapp.com/avatars/758785943426564187/0d2e89ab452cb53f5cb7eaf14295470b.png?size=2048`)
-    .setTitle(`**Show Bot**`)
+    .setAuthor(client.user.username,client.user.avatarURL())
     .setDescription(`
 
 **User Commands**
@@ -30,8 +30,8 @@ module.exports = {
 \`.remove\` - \`.queue\` - \`.filter\`
 \`.loop\` - \`.lyrics\` - \`.radio\`
 
-Links
-[support](https://discord.gg/jcs4XwcExv)    -    [invite](https://discord.com/oauth2/authorize?client_id=806840212608909344&permissions=70346817&scope=bot)
+**Links**
+[support](https://discord.gg/Zj5SFafHKG)    -    [invite](https://discord.com/api/oauth2/authorize?client_id=758785943426564187&permissions=1076132928&scope=bot)
 `)
 
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
