@@ -15,7 +15,7 @@ module.exports = {
     //react with approve emoji
     message.react("<:emoji_4:815583574983966720>");
     //send the invite embed
-    message.reply(new MessageEmbed().setColor("#FF0000").setTitle("❤ Please Invite me: ").setDescription("https://discord.com/oauth2/authorize?client_id=806840212608909344&permissions=70346817&scope=bot")
+    message.reply(new MessageEmbed().setColor("#146DF6").setTitle("❤ Please Invite me: ").setDescription("https://discord.com/oauth2/authorize?client_id=806840212608909344&permissions=70346817&scope=bot")
     .setFooter("And enjoy listening to music!", "https://cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.png?size=1024"));
   }
 }
