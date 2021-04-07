@@ -163,7 +163,7 @@
         channel.leave();
         return message.reply(
         new MessageEmbed()
-        .setColor("RED")
+        .setColor("#146DF6")
         .setTitle( `Not a valid radio station please use a Number between \`1\` and \`${Radiostations.length}\``)
       );}
 
@@ -180,7 +180,7 @@
   if(Number(i) === 35) {
     channel.leave();
     return message.reply(  new MessageEmbed()
-  .setColor("RED")
+  .setColor("#146DF6")
   .setTitle( `Not a valid radio station please use a Number between \`1\` and \`${Radiostations.length}\``));}
   //define the Radio Args like title and url
   const args2 = Radiostations[i-1].split(` `);
@@ -215,11 +215,11 @@
   queueConstruct.connection = await channel.join().catch(console.error);
   //Send info message for joining 
   if(!serverQueue)
-  message.channel.send(    new MessageEmbed().setColor("RED")
+  message.channel.send(    new MessageEmbed().setColor("#146DF6")
   .setDescription(`**👍 Joined \`${channel.name}\` 📄 bouned \`#${message.channel.name}\`**`)
   .setFooter(`${message.author.username}#${message.author.discriminator}`));
   //send Search something embed
-  message.channel.send(new MessageEmbed().setColor("RED")
+  message.channel.send(new MessageEmbed().setColor("#146DF6")
   .setDescription(`**<:youtube:769675858431705109> Searching 🔍 \`${Radiostations[i-1].split(" ")[0]}\`**`));
   //mute yourself
   await queueConstruct.connection.voice.setSelfDeaf(true);
