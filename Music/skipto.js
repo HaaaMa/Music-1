@@ -52,7 +52,7 @@ execute(message, args) {
     //Send approve
     queue.textChannel.send(
       new MessageEmbed()
-        .setColor("RED")
+        .setColor("#146DF6")
         .setAuthor(`${message.author.username}#${message.author.discriminator} skipped ${args[0]} songs`, "https://cdn.discordapp.com/emojis/769915194444480542.png")
     ).catch(console.error);
   }
