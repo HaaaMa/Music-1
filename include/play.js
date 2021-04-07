@@ -25,7 +25,7 @@ module.exports = {
     if (!song) {
       queue.channel.leave();
       message.client.queue.delete(message.guild.id);
-      const endembed = new MessageEmbed().setColor("#F0EAD6")
+      const endembed = new MessageEmbed().setColor("#146DF6")
         .setAuthor(`Music Queue ended.`, "https://cdn.discordapp.com/attachments/778600026280558617/781024479623118878/ezgif.com-gif-maker_1.gif")
       return queue.textChannel.send(endembed).catch(console.error);
     }
@@ -141,12 +141,12 @@ module.exports = {
            const channel = message.member.voice.channel
       const newsong = new MessageEmbed()
         .setTitle(":gem:Playing"   +song.title)
-        .addField("Time Song⏱️:", `\`${song.duration}\`Minutes`, true)
-        .addField("Text Channel🗯️:",message.channel.name)
-        .addField("Voice Channel📣:",channel.name)
-        .addField("Voulome💥:",100)
+        .addField("Time ⏱ :", `\`${song.duration} Minutes 🖇\``, true)
+        .addField("Text Channel 🗯️ :",message.channel.name)
+        .addField("Voice Channel 📣 :",channel.name)
+        .addField("Voulome ❄️ :",100)
         .setURL(song.url)
-        .setColor("#c219d8")
+        .setColor("#146DF6")
         .setThumbnail(thumb)
         .setFooter(`Requested by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
       var playingMessage = await queue.textChannel.send(newsong);
