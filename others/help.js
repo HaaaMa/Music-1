@@ -20,15 +20,15 @@ module.exports = {
     .setDescription(`
 
 **User Commands**
-\`.invite\` - \`.support\` - \`.about\`
-\`.ping\` - \`.prefix\` - \`.uptime\`
+\`${PREFIX}invite\` - \`${PREFIX}support\` - \`${PREFIX}about\`
+\`${PREFIX}ping\` - \`${PREFIX}prefix\` - \`${PREFIX}uptime\`
 
 **Music Commands**
-\`.play\` - \`.skip\` - \`.skipto\`
-\`.stop\` - \`.volume\` - \`.nowplaying\`
-\`.shuffle\` - \`.search\` - \`.resume\`
-\`.remove\` - \`.queue\` - \`.filter\`
-\`.loop\` - \`.lyrics\` - \`.radio\`
+\`${PREFIX}play\` - \`${PREFIX}skip\` - \`${PREFIX}skipto\`
+\`${PREFIX}stop\` - \`${PREFIX}volume\` - \`${PREFIX}nowplaying\`
+\`${PREFIX}shuffle\` - \`${PREFIX}search\` - \`${PREFIX}resume\`
+\`${PREFIX}remove\` - \`${PREFIX}queue\` - \`${PREFIX}filter\`
+\`${PREFIX}loop\` - \`${PREFIX}lyrics\` - \`${PREFIX}radio\`
 
 **Links**
 [support](https://discord.gg/Zj5SFafHKG)    -    [invite](https://discord.com/api/oauth2/authorize?client_id=758785943426564187&permissions=1076132928&scope=bot)
