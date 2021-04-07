@@ -67,13 +67,13 @@ async execute(message, args, client) {
       if (serverQueue) {
         //if its an url
         if (urlValid) { //send searching link
-          message.channel.send(new MessageEmbed().setColor("#FC00FF")
+          message.channel.send(new MessageEmbed().setColor("#146DF6")
             .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
             .setDescription(`<a:links:813729922643263558> \`Searching\` 🔍  [𝗟𝗜𝗡𝗞](${args.join(" ")})`))
         //if not
         }
         else { //send searching TITLE
-          message.channel.send(new MessageEmbed().setColor("#FC00FF")
+          message.channel.send(new MessageEmbed().setColor("#146DF6")
             .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
             .setDescription(`<:Youtube:813453040929210379> \`Searching\` 🔍 __**${args.join(" ")}**__`))
         }
@@ -81,19 +81,19 @@ async execute(message, args, client) {
         //If nothing is playing join the channel
         queueConstruct.connection = await channel.join();
         //send join message
-        message.channel.send(new MessageEmbed().setColor("#FC00FF")
+        message.channel.send(new MessageEmbed().setColor("#146DF6")
           .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
           .setDescription(`**<a:yes:813397195771740182> Joined \`${channel.name} \` 🗯️ Name Channel \`#${message.channel.name}\`**`)
           .setFooter(`By: ${message.author.username}#${message.author.discriminator}`))
         //if its an url
         if (urlValid) { //send searching link
-          message.channel.send(new MessageEmbed().setColor("#FC00FF")
+          message.channel.send(new MessageEmbed().setColor("#146DF6")
             .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
             .setDescription(`<a:links:813729922643263558> \`Searching\` 🔍 [𝗟𝗜𝗡𝗞](${args.join(" ")})`))
           //if not
         }
         else { //send searching TITLE
-          message.channel.send(new MessageEmbed().setColor("#FC00FF")
+          message.channel.send(new MessageEmbed().setColor("#146DF6")
             .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
             .setDescription(`<:Youtube:813453040929210379> \`Searching\`  🔍 __**${args.join(" ")}**__`))
         }
