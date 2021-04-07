@@ -35,11 +35,9 @@ client.on(`ready`, () => {
         if (member.voice.channel.members.size === 1) 
         { return member.voice.channel.leave(); }
       });
-      
-    client.user.setActivity(`${PREFIX}help | Show Bot Is One`, { type: "LISTENING"});
 
     
-    client.user.setActivity(`${client.guilds.cache.size} Server,Users ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)},`, { type: "LISTENING"});
+    client.user.setActivity(`${PREFIX}help | ${client.guilds.cache.size} Server,Users ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)},`, { type: "LISTENING"});
    
   
       }, (5000));
