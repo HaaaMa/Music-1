@@ -35,7 +35,7 @@ module.exports = {
                 message.guild.members.unban(user.user.id, reason).then(() => message.channel.send(embed))
             } else {
                 embed.setTitle(`User ${member.tag} isn't banned!`)
-                    .setColor('#ff0000')
+                    .setColor('#146DF6')
                 message.channel.send(embed)
             }
 
