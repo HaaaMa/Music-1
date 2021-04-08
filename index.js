@@ -79,11 +79,10 @@ client.on(`message`, async (message) => {
   //information message when the bot has been tagged
   if(message.content.includes(client.user.id)) {
     message.reply(new Discord.MessageEmbed()
-                  .setColor("#FF0000")
+                  .setColor("#146DF6")
                  .setDescription(`
 Support Server - [Click Me](https://discord.gg/u4CbGW4qTT)
 Bot Link - [Click Me](https://discord.com/oauth2/authorize?client_id=758785943426564187&permissions=1076132928&scope=bot)
-Bot Vote - [Click Me](https://top.gg/bot/792047204361175091)
 `)
                   .setTitle(`
 Join a voice channel and \`s!play\` a song.
@@ -95,7 +94,7 @@ Type \`s!help\` for the list of commands.`));
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("#FF0000")
+    .setColor("#146DF6")
     .setDescription(saymsg)
     .setFooter("Reyna", client.user.displayAvatarURL())
     //delete the Command
@@ -120,7 +119,7 @@ client.on("guildCreate" , DarkMan => {
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("#FF0000")
+    .setColor("#146DF6")
     .setAuthor("About Reyna Bot.", "https://cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.png?size=1024")
     .setThumbnail(`https://cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.png?size=1024`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
@@ -155,7 +154,7 @@ Online
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("#FF0000")
+    .setColor("#146DF6")
     .setDescription (`
     Links
 
@@ -201,7 +200,7 @@ client.on("guildCreate" , DarkMan => {
    if (now < expirationTime) {
      const timeLeft = (expirationTime - now) / 1000;
      return message.reply(
-      new MessageEmbed().setColor("#FF0000")
+      new MessageEmbed().setColor("#146DF6")
       .setTitle(`<:emoji_4:815583574983966720> \`Please wait ${timeLeft.toFixed(1)} seconds before reusing the ${prefix}${command.name}\`!`)    
      );
    }
@@ -212,7 +211,7 @@ client.on("guildCreate" , DarkMan => {
    command.execute(message, args, client);
  } catch (error) {
    console.error(error);
-   message.reply( new MessageEmbed().setColor("#FF0000")
+   message.reply( new MessageEmbed().setColor("#146DF6")
    .setTitle(`<:emoji_4:815583574983966720> There was an error executing that command.`)).catch(console.error);
  }
 
@@ -221,7 +220,7 @@ client.on("guildCreate" , DarkMan => {
 
 client.on("guildCreate", guild => {
   let channel = client.channels.cache.get("829675413470969886");
-  let embed = new MessageEmbed().setColor("#fc0303")
+  let embed = new MessageEmbed().setColor("#146DF6")
   .setAuthor(client.user.username, client.user.avatarURL())
   .setTitle( `✅ Join Server`)
   .addField("🔠 **Server Name**", `${guild.name}`)
@@ -235,7 +234,7 @@ client.on("guildCreate", guild => {
 client.on("guildDelete", guild => {
   let channel = client.channels.cache.get("829675413470969886");
   let embed = new MessageEmbed()
-  .setColor("#fc0303")
+  .setColor("#146DF6")
   .setAuthor(client.user.username, client.user.avatarURL())
   .setTitle( `❌ Left Server`)
   .addField("🔠 **Server Name**", `${guild.name}`)
