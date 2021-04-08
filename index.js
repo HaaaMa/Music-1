@@ -113,40 +113,6 @@ client.on("guildCreate" , DarkMan => {
   }
 })
 
-//An about announcement for everyone but no one knows so fine ^w^
-  if(message.content.startsWith(`${prefix}about`)){
-    //define saymsg
-    const saymsg = message.content.slice(Number(prefix.length) + 5)
-    //define embed
-    const embed = new Discord.MessageEmbed()
-    .setColor("#146DF6")
-    .setAuthor("About Reyna Bot.", "https://cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.png?size=1024")
-    .setThumbnail(`https://cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.png?size=1024`)
-    .setFooter(message.author.username, message.author.displayAvatarURL)
-    .setTimestamp()
-    .setDescription(`
-
-[Support](https://discord.gg/jcs4XwcExv) - [Invite](https://discord.com/oauth2/authorize?client_id=806840212608909344&permissions=70346817&scope=bot)
-
-**Developers Bot** :
-<@790233637580832788>
-
-**Set Status** :
-Online
-
-**Time Create** :
-4/2/2021
-
-**Prefix Bot** :
-.
-
-`)
-
-    //send the Message
-    message.channel.send(embed)
-   message.react("<:emoji_4:815583574983966720>")
-  } 
-
 
 //An suuport announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}support`)){
