@@ -29,7 +29,7 @@ module.exports = {
     }
     //define queueembed
     let queueEmbed = new MessageEmbed()
-      .setTitle("Music Queue")
+      .setAuthor("<a:stop:813505072704913419> Music Queue")
       .setDescription(description)
       .setColor("#146DF6");
     //split the description
@@ -44,7 +44,7 @@ module.exports = {
       //(over)write embed description
       queueEmbed.setDescription(m);
       //react with emoji
-      message.react("<:emoji_4:815583574983966720>")
+      message.react("")
       //send embed
       message.channel.send(queueEmbed);
     });
