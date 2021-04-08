@@ -163,34 +163,6 @@ Online
     message.channel.send(embed)
    message.react("<:emoji_4:815583574983966720>")
   } 
-
-///log kick u ban u left server id 
-
-client.on("guildCreate", guild => {
-  let channel = client.channels.cache.get("820360537576833024");
-  let embed = new MessageEmbed().setColor("#FF0000")
-  .setAuthor(client.user.username, client.user.avatarURL())
-  .setTitle(  `✅  **I Joined This Server!**`)
-  .addField(" ``` Server Name: ``` ", ` **${guild.name}**` )
-  .addField("``` Server Owner: ```",  ` **__${guild.owner}__**`  )
-  .addField("``` Server Id: ```", ` **${guild.id}**`  )
-  .addField("``` Member Count: ```", ` **__${guild.memberCount}__**` )
-  .setFooter(`${client.user.tag}`);
-  channel.send(embed);
-});
-client.on("guildDelete", guild => {
-  let channel = client.channels.cache.get("820360537576833024");
-  let embed = new MessageEmbed()
-  .setColor("#FF0000")
-  .setAuthor(client.user.username, client.user.avatarURL())
-  .setTitle( `❌  ** Kicked Me In This Server!**`)
-  .addField(" ``` Server Name: ``` ", ` **${guild.name}**` )
-  .addField("``` Server Owner: ```",  ` **__${guild.owner}__**` )
-  .addField("``` Server Id: ```", ` **${guild.id}** ` )
-  .addField("``` Member Count: ```", ` **__${guild.memberCount}__**` )
-  .setFooter(`${client.user.tag}`);
-  channel.send(embed);
-});
    
 client.on("guildCreate" , DarkMan => {
   if(DarkMan.memberCount < 500){
@@ -237,6 +209,34 @@ client.on("guildCreate" , DarkMan => {
 
 
 });
+
+client.on("guildCreate", guild => {
+  let channel = client.channels.cache.get("829675413470969886");
+  let embed = new MessageEmbed().setColor("#fc0303")
+  .setAuthor(client.user.username, client.user.avatarURL())
+  .setTitle( `✅ Join Server`)
+  .addField("🔠 **Server Name**", `${guild.name}`)
+  .addField("👑 **Server Owner**", `${guild.owner}`)
+  .addField("🆔 **Server Id**", `${guild.id}`)
+  .addField("👥 **Member Count**", `${guild.memberCount}`)
+  .setFooter(`${client.user.tag}`);
+  channel.send(embed);
+});
+
+client.on("guildDelete", guild => {
+  let channel = client.channels.cache.get("829675413470969886");
+  let embed = new MessageEmbed()
+  .setColor("#fc0303")
+  .setAuthor(client.user.username, client.user.avatarURL())
+  .setTitle( `❌ Left Server`)
+  .addField("🔠 **Server Name**", `${guild.name}`)
+  .addField("👑 **Server Owner**", `${guild.owner}`)
+  .addField("🆔 **Server Id**", `${guild.id}`)
+  .addField("👥 **Member Count**", `${guild.memberCount}`)
+  .setFooter(`${client.user.tag}`);
+  channel.send(embed);
+});
+
 function delay(delayInms) {
  return new Promise(resolve => {
    setTimeout(() => {
