@@ -140,7 +140,7 @@ module.exports = {
       let embed = new MessageEmbed()
            const channel = message.member.voice.channel
       const newsong = new MessageEmbed()
-        .setTitle(":gem:" +song.title)
+        .setTitle(":gem:"   +song.title)
         .addField("Time ⏱ :", `\`${song.duration} Minutes 🖇\``, true)
         .addField("Text Channel 🗯️ :",message.channel.name)
         .addField("Voice Channel 📣 :",channel.name)
