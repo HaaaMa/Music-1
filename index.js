@@ -81,12 +81,12 @@ client.on(`message`, async (message) => {
     message.reply(new Discord.MessageEmbed()
                   .setColor("#146DF6")
                  .setDescription(`
-Support Server - [Click Me](https://discord.gg/u4CbGW4qTT)
-Bot Link - [Click Me](https://discord.com/oauth2/authorize?client_id=758785943426564187&permissions=1076132928&scope=bot)
+Support Server - [Click Me](https://discord.gg/VWuQfQfjc9)
+Bot Link - [Click Me](https://discord.com/api/oauth2/authorize?client_id=814608707412295780&permissions=8&scope=bot)
 `)
                   .setTitle(`
-Join a voice channel and \`s!play\` a song.
-Type \`s!help\` for the list of commands.`));
+Join a voice channel and \`>play\` a song.
+Type \`>help\` for the list of commands.`));
   } 
   //An embed announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}embed`)){
@@ -94,9 +94,9 @@ Type \`s!help\` for the list of commands.`));
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("#146DF6")
-    .setDescription(saymsg)
-    .setFooter("Reyna", client.user.displayAvatarURL())
+    .setColor("RANDOM")
+    .setDescription(remix)
+    .setFooter("remix", client.user.displayAvatarURL())
     //delete the Command
     message.delete({timeout: 300})
     //send the Message
@@ -120,22 +120,22 @@ client.on("guildCreate" , DarkMan => {
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("#146DF6")
+    .setColor("RANDOM")
     .setDescription (`
     Links
 
-[Support](https://discord.gg/jcs4XwcExv)
+[Support](https://discord.gg/VWuQfQfjc9)
 -
-[Invite](https://discord.com/oauth2/authorize?client_id=806840212608909344&permissions=70346817&scope=bot)`)
+[Invite](https://discord.com/api/oauth2/authorize?client_id=814608707412295780&permissions=8&scope=bot)`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setImage(``)
-    .setTitle(`**Support Reyna**`) 
+    .setTitle(`**Support Remix**`) 
     .setThumbnail(`https://cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.png?size=1024`)
     .setTimestamp()
     
     //send the Message
     message.channel.send(embed)
-   message.react("<:emoji_4:815583574983966720>")
+   message.react("<a:waitting:823649927556628481>")
   } 
    
 client.on("guildCreate" , DarkMan => {
@@ -167,7 +167,7 @@ client.on("guildCreate" , DarkMan => {
      const timeLeft = (expirationTime - now) / 1000;
      return message.reply(
       new MessageEmbed().setColor("#146DF6")
-      .setTitle(`<:emoji_4:815583574983966720> \`Please wait ${timeLeft.toFixed(1)} seconds before reusing the ${prefix}${command.name}\`!`)    
+      .setTitle(`<a:waitting:801113096843690035> \`Please wait ${timeLeft.toFixed(1)} seconds before reusing the ${prefix}${command.name}\`!`)    
      );
    }
  }
@@ -178,7 +178,7 @@ client.on("guildCreate" , DarkMan => {
  } catch (error) {
    console.error(error);
    message.reply( new MessageEmbed().setColor("#146DF6")
-   .setTitle(`<:emoji_4:815583574983966720> There was an error executing that command.`)).catch(console.error);
+   .setTitle(`<a:stats:826412769459961856> There was an error executing that command.`)).catch(console.error);
  }
 
 
