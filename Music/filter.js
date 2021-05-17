@@ -118,7 +118,8 @@ async execute(message, args, client) {
       message.channel.send(new MessageEmbed()
       .setColor("#146DF6")
       .setAuthor("Applying: " + args[0], "https://cdn.discordapp.com/emojis/769935094285860894.gif")).then(msg =>{
-        msg.delete({timeout: 2000});
+      message.react("✅")
+      msg.delete({timeout: 2000});
       })
       play(song, message, client, choice);
       //catch any errors while searching
