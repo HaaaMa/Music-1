@@ -18,7 +18,7 @@ module.exports = {
     let seconds = Math.floor(client.uptime / 1000) % 60;
     //react with approve emoji
     message.react("<:emoji_4:815583574983966720>");
-    return message.channel.send(new MessageEmbed().setColor("#146DF6").setTitle(`<:emoji_4:815583574983966720>\`Show Bot Uptime \`\n\n\`${days}d\` \`${hours}h\` \`${minutes}m\` \`${seconds}s\n\``));
+    return message.channel.send(new MessageEmbed().setColor("#146DF6").setTitle(`<a:__:825010064066347009>\`Show Bot Uptime \`\n\n\`${days}d\` \`${hours}h\` \`${minutes}m\` \`${seconds}s\n\``));
 
 
   }
