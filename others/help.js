@@ -25,12 +25,12 @@ module.exports = {
 \`${PREFIX}se (emoji)\`   **-**   \`${PREFIX}invites\`   **-**   \`${PREFIX}embed\`
 
 **Music Commands**
-\`${PREFIX}play\`   **•**  \`${PREFIX}skip\`   **-**   \`${PREFIX}stop\`   **-**  \`${PREFIX}radio\`
-\`${PREFIX}volume\`   **•**   \`${PREFIX}shuffle\`   **-**   \`${PREFIX}search\` 
-\`${PREFIX}resume\`   **•**   \`${PREFIX}remove\`   **-**   \`${PREFIX}queue\`
-\`${PREFIX}filter\`   **•**   \`${PREFIX}loop\`   **-**  \`${PREFIX}lyrics\`
+\`${PREFIX}play\`   **-**   \`${PREFIX}skip\`   **-**   \`${PREFIX}stop\`   **-**  \`${PREFIX}radio\`
+\`${PREFIX}volume\`   **-**   \`${PREFIX}shuffle\`   **-**   \`${PREFIX}search\` 
+\`${PREFIX}resume\`   **-**   \`${PREFIX}remove\`   **-**   \`${PREFIX}queue\`
+\`${PREFIX}filter\`   **-**   \`${PREFIX}loop\`   **-**  \`${PREFIX}lyrics\`
 
-**Fun Commands**
+**Moderation Commands**
 \`${PREFIX}lock\`  **•**  \`${PREFIX}unlock\`  **•** \`${PREFIX}ban\`
 \`${PREFIX}unban\`  **•** \`${PREFIX}slowmode\`
 
