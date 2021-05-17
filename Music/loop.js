@@ -28,9 +28,9 @@ async execute(message) {
     //Define the Loop embed
     const loopembed = new MessageEmbed()
     .setColor(queue.loop ? "#146DF6" : "#146DF6")
-    .setAuthor(`Loop is now ${queue.loop ? " enabled" : " disabled"}`, "https://cdn.discordapp.com/emojis/769913064194834511.png")
+    .setAuthor(`Loop is now ${queue.loop ? " enabled" : " disabled"}`, "https://media.discordapp.net/attachments/790836700561670145/791251406223966218/image1.gif")
     //react with approve emoji
-    message.react("<:emoji_4:815583574983966720>");
+    message.react("✅");
     //send message into the Queue chat
     return queue.textChannel
       .send(loopembed)
