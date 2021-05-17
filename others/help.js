@@ -16,6 +16,7 @@ module.exports = {
 
     let helpEmbed = new MessageEmbed()
   //  .setThumbnail(`https://media.discordapp.net/attachments/790836700561670145/843616964106911794/image0.gif`)
+    .setImage(`https://media.discordapp.net/attachments/790836700561670145/823722035678281758/image0.gif`)
     .setAuthor(`Remix`, `https://media.discordapp.net/attachments/790836700561670145/843599820807208970/image0.gif`)
     .setDescription(`
 
