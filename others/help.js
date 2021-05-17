@@ -31,8 +31,8 @@ module.exports = {
 \`${PREFIX}filter\`   **-**   \`${PREFIX}loop\`   **-**  \`${PREFIX}lyrics\`
 
 **Moderation Commands**
-\`${PREFIX}lock\`  **•**  \`${PREFIX}unlock\`   **-**   \`${PREFIX}ban\`
-\`${PREFIX}unban\`   **•**   \`${PREFIX}slowmode\`
+\`${PREFIX}lock\`  **-**  \`${PREFIX}unlock\`   **-**   \`${PREFIX}ban\`
+\`${PREFIX}unban\`   **-**   \`${PREFIX}slowmode\`
 
 **Links**
 [support](https://discord.gg/VWuQfQfjc9)    -    [invite](https://discord.com/api/oauth2/authorize?client_id=814608707412295780&permissions=8&scope=bot)    -    [vote](https://top.gg/bot/814608707412295780)`)
