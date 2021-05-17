@@ -10,29 +10,29 @@ module.exports = {
   name: "help",
   aliases: ["h"],
   cooldown: 8,
-  description: "**Reyna Help**",
+  description: "**Remix Help**",
   execute(message) {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
     .setThumbnail(`https://cdn.discordapp.com/avatars/758785943426564187/0d2e89ab452cb53f5cb7eaf14295470b.png?size=2048`)
-    .setAuthor(`Show Bot`, `https://cdn.discordapp.com/avatars/758785943426564187/0d2e89ab452cb53f5cb7eaf14295470b.png?size=2048`)
+    .setAuthor(`Remix`, `https://cdn.discordapp.com/avatars/758785943426564187/0d2e89ab452cb53f5cb7eaf14295470b.png?size=2048`)
     .setDescription(`
 
 **User Commands**
-\`${PREFIX}invite\` - \`${PREFIX}support\` \`${PREFIX}ping\`
-\`${PREFIX}prefix\` - \`${PREFIX}uptime\` \`${PREFIX}avatar\`
-\`${PREFIX}se (emoji)\` - \`${PREFIX}invites\` \`{PREFIX}embed\`
+\`${PREFIX}invite\`  **•**  \`${PREFIX}support\`  **•**  \`${PREFIX}ping\`
+\`${PREFIX}prefix\`  **•**  \`${PREFIX}uptime\`  **•**  \`${PREFIX}avatar\`
+\`${PREFIX}se (emoji)\`  **•**  \`${PREFIX}invites\`  **•**  \`${PREFIX}embed\`
 
 **Music Commands**
-\`${PREFIX}play\` - \`${PREFIX}skip\` - \`${PREFIX}stop\` - \`${PREFIX}radio\`
-\`${PREFIX}volume\` \`${PREFIX}shuffle\` \`${PREFIX}search\` 
-\`${PREFIX}resume\`\`${PREFIX}remove\` - \`${PREFIX}queue\`
-\`${PREFIX}filter\`\`${PREFIX}loop\` - \`${PREFIX}lyrics\`
+\`${PREFIX}play\`  **•** \`${PREFIX}skip\`  **•**  \`${PREFIX}stop\`  **•** \`${PREFIX}radio\`
+\`${PREFIX}volume\`  **•**  \`${PREFIX}shuffle\`  **•**\`${PREFIX}search\` 
+\`${PREFIX}resume\`  **•**  \`${PREFIX}remove\`  **•** \`${PREFIX}queue\`
+\`${PREFIX}filter\`  **•**  \`${PREFIX}loop\`  **•** \`${PREFIX}lyrics\`
 
 **Fun Commands**
-\`${PREFIX}lock\` - \`${PREFIX}unlock\` - \`${PREFIX}ban\`
-\`${PREFIX}unban\` - \`${PREFIX}slowmode\`
+\`${PREFIX}lock\`  **•**  \`${PREFIX}unlock\`  **•** \`${PREFIX}ban\`
+\`${PREFIX}unban\`  **•** \`${PREFIX}slowmode\`
 
 **Links**
 [support](https://discord.gg/VWuQfQfjc9)    -    [invite](https://discord.com/api/oauth2/authorize?client_id=814608707412295780&permissions=8&scope=bot)    -    [vote](https://top.gg/bot/814608707412295780)`)
