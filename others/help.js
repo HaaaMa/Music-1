@@ -20,15 +20,15 @@ module.exports = {
     .setDescription(`
 
 **User Commands**
-\`${PREFIX}invite\`  **•**  \`${PREFIX}support\`  **•**  \`${PREFIX}ping\`
-\`${PREFIX}prefix\`  **•**  \`${PREFIX}uptime\`  **•**  \`${PREFIX}avatar\`
-\`${PREFIX}se (emoji)\`  **•**  \`${PREFIX}invites\`  **•**  \`${PREFIX}embed\`
+\`${PREFIX}invite\`   **-**   \`${PREFIX}support\`   **-**   \`${PREFIX}ping\`
+\`${PREFIX}prefix\`   **-**   \`${PREFIX}uptime\`   **-**   \`${PREFIX}avatar\`
+\`${PREFIX}se (emoji)\`   **-**   \`${PREFIX}invites\`   **-**   \`${PREFIX}embed\`
 
 **Music Commands**
-\`${PREFIX}play\`  **•** \`${PREFIX}skip\`  **•**  \`${PREFIX}stop\`  **•** \`${PREFIX}radio\`
-\`${PREFIX}volume\`  **•**  \`${PREFIX}shuffle\`  **•**\`${PREFIX}search\` 
-\`${PREFIX}resume\`  **•**  \`${PREFIX}remove\`  **•** \`${PREFIX}queue\`
-\`${PREFIX}filter\`  **•**  \`${PREFIX}loop\`  **•** \`${PREFIX}lyrics\`
+\`${PREFIX}play\`   **•**  \`${PREFIX}skip\`   **-**   \`${PREFIX}stop\`   **-**  \`${PREFIX}radio\`
+\`${PREFIX}volume\`   **•**   \`${PREFIX}shuffle\`   **-**   \`${PREFIX}search\` 
+\`${PREFIX}resume\`   **•**   \`${PREFIX}remove\`   **-**   \`${PREFIX}queue\`
+\`${PREFIX}filter\`   **•**   \`${PREFIX}loop\`   **-**  \`${PREFIX}lyrics\`
 
 **Fun Commands**
 \`${PREFIX}lock\`  **•**  \`${PREFIX}unlock\`  **•** \`${PREFIX}ban\`
