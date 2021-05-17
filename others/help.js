@@ -20,16 +20,15 @@ module.exports = {
     .setDescription(`
 
 **User Commands**
-\`${PREFIX}invite\` - \`${PREFIX}support\`
-\`${PREFIX}ping\` - \`${PREFIX}prefix\` - \`${PREFIX}uptime\`
-\`${PREFIX}avatar\` - \`${PREFIX}se\` - \`${PREFIX}invites\`
+\`${PREFIX}invite\` - \`${PREFIX}support\` \`${PREFIX}ping\`
+\`${PREFIX}prefix\` - \`${PREFIX}uptime\` \`${PREFIX}avatar\`
+\`${PREFIX}se (emoji)\` - \`${PREFIX}invites\` \`{PREFIX}embed\`
 
 **Music Commands**
-\`${PREFIX}play\` - \`${PREFIX}skip\` 
-\`${PREFIX}stop\` - \`${PREFIX}volume\`
-\`${PREFIX}shuffle\` - \`${PREFIX}search\` - \`${PREFIX}resume\`
-\`${PREFIX}remove\` - \`${PREFIX}queue\` - \`${PREFIX}filter\`
-\`${PREFIX}loop\` - \`${PREFIX}lyrics\` - \`${PREFIX}radio\`
+\`${PREFIX}play\` - \`${PREFIX}skip\` - \`${PREFIX}stop\` - \`${PREFIX}radio\`
+\`${PREFIX}volume\` \`${PREFIX}shuffle\` \`${PREFIX}search\` 
+\`${PREFIX}resume\`\`${PREFIX}remove\` - \`${PREFIX}queue\`
+\`${PREFIX}filter\`\`${PREFIX}loop\` - \`${PREFIX}lyrics\`
 
 **Fun Commands**
 \`${PREFIX}lock\` - \`${PREFIX}unlock\` - \`${PREFIX}ban\`
@@ -39,7 +38,7 @@ module.exports = {
 [support](https://discord.gg/VWuQfQfjc9)    -    [invite](https://discord.com/api/oauth2/authorize?client_id=814608707412295780&permissions=8&scope=bot)    -    [vote](https://top.gg/bot/814608707412295780)`)
 
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-   .setColor("#146DF6");
+   .setColor("RANDOM");
    message.react("✅")
     return message.channel.send(helpEmbed).catch(console.error);
 
