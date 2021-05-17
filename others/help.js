@@ -15,7 +15,7 @@ module.exports = {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
-    .setImage(`https://media.discordapp.net/attachments/790836700561670145/843616964106911794/image0.gif`)
+    .setThumbnail(`https://media.discordapp.net/attachments/790836700561670145/843616964106911794/image0.gif`)
     .setAuthor(`Remix`, `https://media.discordapp.net/attachments/790836700561670145/843599820807208970/image0.gif`)
     .setDescription(`
 
@@ -39,7 +39,6 @@ module.exports = {
 
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setColor("RANDOM");
-   .setThumbnail(`https://media.discordapp.net/attachments/790836700561670145/838764604443983963/image0.gif`)
    message.react("✅")
     return message.channel.send(helpEmbed).catch(console.error);
 
