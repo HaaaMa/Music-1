@@ -26,10 +26,10 @@ module.exports = {
 \`${PREFIX}se (emoji)\`   **-**   \`${PREFIX}invites\`
 
 **Music Commands**
-\`${PREFIX}play\`   **-**   \`${PREFIX}skip\`   **-**   \`${PREFIX}stop\`   **-**  \`${PREFIX}radio\`
-\`${PREFIX}volume\`   **-**   \`${PREFIX}shuffle\`   **-**   \`${PREFIX}search\` 
-\`${PREFIX}resume\`   **-**   \`${PREFIX}remove\`   **-**   \`${PREFIX}queue\`
-\`${PREFIX}filter\`   **-**   \`${PREFIX}loop\`   **-**  \`${PREFIX}lyrics\`
+\`${PREFIX}play\`   **-**   \`${PREFIX}skip\`   **-**   \`${PREFIX}volume\`   
+\`${PREFIX}leave\`   **-**   \`${PREFIX}remove\`   **-**   \`${PREFIX}queue\`
+\`${PREFIX}filter\`   **-**   \`${PREFIX}loop\`   **-**   \`${PREFIX}lyrics\`
+\`${PREFIX}radio\`   **-**   \`${PREFIX}search\`   **-**   \`${PREFIX}shuffle\`
 
 **Moderation Commands**
 \`${PREFIX}lock\`  **-**  \`${PREFIX}unlock\`   **-**   \`${PREFIX}ban\`
