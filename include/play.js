@@ -150,17 +150,17 @@ module.exports = {
         .setThumbnail(thumb)
         .setFooter(`Requested by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
       var playingMessage = await queue.textChannel.send(newsong);
-      await playingMessage.react("⏭");
-      await playingMessage.react("⏯");
-      await playingMessage.react("🔉");
-      await playingMessage.react("🔊");
-      await playingMessage.react("🔇");
-      await playingMessage.react("🔁");
-      await playingMessage.react("🔀");
-      await playingMessage.react("⏹");
-      await playingMessage.react("🎵");
-      await playingMessage.react("🎶");
-      await playingMessage.react("📑");
+  //    await playingMessage.react("⏭");
+   //   await playingMessage.react("⏯");
+   //   await playingMessage.react("🔉");
+  //    await playingMessage.react("🔊");
+   //   await playingMessage.react("🔇");
+   //   await playingMessage.react("🔁");
+   //   await playingMessage.react("🔀");
+   //   await playingMessage.react("⏹");
+  //    await playingMessage.react("🎵");
+    //  await playingMessage.react("🎶");
+    //  await playingMessage.react("📑");
     } catch (error) {
       console.error(error);
     }
