@@ -140,7 +140,7 @@ module.exports = {
       let embed = new MessageEmbed()
            const channel = message.member.voice.channel
       const newsong = new MessageEmbed()
-        .setTitle(":gem: "+song.title)
+        .setTitle("🎶 "+song.title)
         .addField("Time ⏱ :", `\`${song.duration} Minutes 🖇\``, true)
         .addField("Voice Channel 📣 :",channel.name)
         .addField("Text Channel 🗯️ :",message.channel.name)
@@ -148,13 +148,13 @@ module.exports = {
         .setURL(song.url)
         .setColor("#146DF6")
         .setThumbnail(thumb)
-        .setFooter(`Requested by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+   //     .setFooter(`Requested by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
       var playingMessage = await queue.textChannel.send(newsong);
   //    await playingMessage.react("⏭");
    //   await playingMessage.react("⏯");
-   //   await playingMessage.react("🔉");
-  //    await playingMessage.react("🔊");
-   //   await playingMessage.react("🔇");
+        await playingMessage.react("🔉");
+        await playingMessage.react("🔊");
+        await playingMessage.react("🔇");
    //   await playingMessage.react("🔁");
    //   await playingMessage.react("🔀");
    //   await playingMessage.react("⏹");
