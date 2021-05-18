@@ -1,7 +1,7 @@
 const { MessageEmbed } = require("discord.js");
 const ms = require("ms");
 module.exports = {
-  name: "start",
+  name: "giveaway",
   description: "Create a simple giveaway",
   cooldown: 1.5,
   usage: "<time> <winner> <prize>",
@@ -26,7 +26,7 @@ module.exports = {
     if (!prize) return message.channel.send(`No prize specified!`);
     message.channel.send(`🎉**|Giveaway created in** ${channel}`);
     let Embed = new MessageEmbed()
-      .setTitle(`<a:giveaway:817399361201766410> New giveaway!`)
+      .setTitle(`🎉 New giveaway!`)
       .setDescription(
         `**${prize}**
 React with 🎉 to enter!
@@ -52,8 +52,7 @@ Hosted by: ${message.author}`)
         .random();
       channel.send(
         `**The winner of the giveaway for**
-#️⃣|${channel}
-<a:winner:817425780992114708>|${message.author}`
+ 🎉 ${message.author} 🎉`
       );
     }, ms(args[0]));
   },
