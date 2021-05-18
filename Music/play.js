@@ -81,10 +81,10 @@ async execute(message, args, client) {
   //      //If nothing is playing join the channel
         queueConstruct.connection = await channel.join();
   //      //send join message
-        message.channel.send(new MessageEmbed().setColor("#146DF6")
-          .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-          .setDescription(`**<a:yes:813397195771740182> Joined \`${channel.name} \` 🗯️ Name Channel \`#${message.channel.name}\`**`)
-          .setFooter(`By: ${message.author.username}#${message.author.discriminator}`))
+   //     message.channel.send(new MessageEmbed().setColor("#146DF6")
+ //         .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+  //        .setDescription(`**<a:yes:813397195771740182> Joined \`${channel.name} \` 🗯️ Name Channel \`#${message.channel.name}\`**`)
+  //        .setFooter(`By: ${message.author.username}#${message.author.discriminator}`))
   //      //if its an url
         if (urlValid) { //send searching link
           message.channel.send(new MessageEmbed().setColor("#146DF6")
