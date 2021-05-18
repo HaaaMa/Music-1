@@ -1,7 +1,7 @@
 const { MessageEmbed } = require("discord.js");
 const ms = require("ms");
 module.exports = {
-  name: "giveaway",
+  name: "start",
   description: "Create a simple giveaway",
   cooldown: 1.5,
   usage: "<time> <winner> <prize>",
@@ -20,21 +20,20 @@ module.exports = {
     let channel = message.mentions.channels.first();
     if (!channel)
     return message.channel.send(
-        `Please select a channel!`
+        `I could not find that channel in the guild!`
       );
     let prize = args.slice(2).join(" ");
     if (!prize) return message.channel.send(`No prize specified!`);
     message.channel.send(`🎉**|Giveaway created in** ${channel}`);
     let Embed = new MessageEmbed()
-      .setTitle(`🎉 New giveaway!`)
+      .setTitle(`:giveaway: New giveaway!`)
       .setDescription(
         `**${prize}**
-Host: ${message.author}
-Click 🎉 to win
-`)
+React with 🎉 to enter!
+Hosted by: ${message.author}`)
       .setTimestamp()
-      .setFooter(`Start at`)
-      .setColor(`RANDOM`);
+      .setFooter(`Ends at`)
+      .setColor(`#146DF6`);
     //delete the Command
     message.delete({timeout: 300})
     let m = await channel.send(Embed);
@@ -52,9 +51,10 @@ Click 🎉 to win
         .users.cache.filter((u) => !u.bot)
         .random();
       channel.send(
-    `**The winner of the giveaway for**
- 🎉 ${message.author} 🎉`
-  
-     );
+        `**The winner of the giveaway for**
+#️⃣|${channel}
+:winner:|${message.author}`
+      );
     }, ms(args[0]));
-  };
+  },
+};
