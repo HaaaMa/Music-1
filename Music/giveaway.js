@@ -9,10 +9,12 @@ module.exports = {
   async execute(message, args) {
     if (!args[0]) return message.channel.send(`\` 
 • 1: Set Time  -  (d , h , m)
--
+\`-\`
 • 2: Selecte a channel - #channel
--
-• 3: Set Prize - 50k owo \``);
+\`-\`
+• 3: Set Prize - 50k owo \`
+
+\`Example: {PREFIX}giveaway 1d #channel 10k credit\``);
     if (
       !args[0].endsWith("d") &&
       !args[0].endsWith("h") &&
