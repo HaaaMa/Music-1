@@ -20,7 +20,7 @@ module.exports = {
     let channel = message.mentions.channels.first();
     if (!channel)
     return message.channel.send(
-        `I could not find that channel in the guild!`
+        `Please select a channel!`
       );
     let prize = args.slice(2).join(" ");
     if (!prize) return message.channel.send(`No prize specified!`);
