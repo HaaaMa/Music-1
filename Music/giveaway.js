@@ -7,29 +7,29 @@ module.exports = {
   usage: "<time> <winner> <prize>",
   category: "fun",
   async execute(message, args) {
-    if (!args[0]) return message.channel.send(`\`Set Time\` ex: 1d / 12h`);
+    if (!args[0]) return message.channel.send(`\`Set Time\` - ex: 1d / 12h`);
     if (
       !args[0].endsWith("d") &&
       !args[0].endsWith("h") &&
       !args[0].endsWith("m")
     )
       return message.channel.send(
-        `Set channel  ex: #giveaway`
+        `You did not use the correct formatting for the time!`
       );
     if (isNaN(args[0][0])) return message.channel.send(`That is not a number!`);
     let channel = message.mentions.channels.first();
     if (!channel)
     return message.channel.send(
-        `I could not find that channel in the guild!`
+        `\`Select a channel\` - ex: #channel`
       );
     let prize = args.slice(2).join(" ");
-    if (!prize) return message.channel.send(`Set Prize!  ex: 100k credit`);
+    if (!prize) return message.channel.send(`\`Set Prize!\` - ex: 100k credit`);
     message.channel.send(`🎉**|Giveaway created in** ${channel}`);
     let Embed = new MessageEmbed()
       .setTitle(`New giveaway!`)
       .setDescription(
         `**${prize}**
-React with 🎉 to enter!
+React: 🎉 to win!
 Host: ${message.author}`)
       .setTimestamp()
       .setFooter(`Start at`)
