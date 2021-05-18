@@ -12,7 +12,7 @@ module.exports = {
 • 2: Selecte a channel - #channel
 • 3: Set Prize - 50k owo \`
 ---
-\`ex: ${PREFIX}giveaway 1d #channel 10k credit\` `);
+\`ex: ${PREFIX}giveaway 1d #channel 10k credit\`. `);
     if (
       !args[0].endsWith("d") &&
       !args[0].endsWith("h") &&
