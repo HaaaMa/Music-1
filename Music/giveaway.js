@@ -29,8 +29,10 @@ module.exports = {
       .setTitle(`🎉 New giveaway!`)
       .setDescription(
         `**${prize}**
-React with 🎉 to enter!
-Hosted by: ${message.author}`)
+
+Host: ${message.author}
+Click 🎉 to win
+`)
       .setTimestamp()
       .setFooter(`Start at`)
       .setColor(`RANDOM`);
@@ -50,7 +52,7 @@ Hosted by: ${message.author}`)
         .get("🎉")
         .users.cache.filter((u) => !u.bot)
         .random();
-      channel.send(
+      channel.send.(
     `**The winner of the giveaway for**
  🎉 ${message.author} 🎉`
   
