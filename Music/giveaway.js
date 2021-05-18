@@ -57,4 +57,4 @@ Click 🎉 to win
   
      );
     }, ms(args[0]));
-  },
+  };
