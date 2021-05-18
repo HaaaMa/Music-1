@@ -32,8 +32,8 @@ module.exports = {
 React with 🎉 to enter!
 Hosted by: ${message.author}`)
       .setTimestamp()
-      .setFooter(`Ends at`)
-      .setColor(`#146DF6`);
+      .setFooter(`Start at`)
+      .setColor(`RANDOM`);
     //delete the Command
     message.delete({timeout: 300})
     let m = await channel.send(Embed);
@@ -51,9 +51,10 @@ Hosted by: ${message.author}`)
         .users.cache.filter((u) => !u.bot)
         .random();
       channel.send(
-        `**The winner of the giveaway for**
+    `**The winner of the giveaway for**
  🎉 ${message.author} 🎉`
-      );
+     await message.channel.send(embed);
+     );
     }, ms(args[0]));
   },
 };
