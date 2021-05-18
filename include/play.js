@@ -155,7 +155,7 @@ module.exports = {
         await playingMessage.react("🔉");
         await playingMessage.react("🔊");
         await playingMessage.react("🔇");
-   //   await playingMessage.react("🔁");
+        await playingMessage.react("🔁");
    //   await playingMessage.react("🔀");
    //   await playingMessage.react("⏹");
   //    await playingMessage.react("🎵");
