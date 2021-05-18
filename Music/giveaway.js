@@ -16,12 +16,12 @@ module.exports = {
       return message.channel.send(
         `You did not use the correct formatting for the time!`
       );
-  //  if (isNaN(args[0][0])) return message.channel.send(`That is not a number!`);
- //   let channel = message.mentions.channels.first();
-  //  if (!channel)
- //   return message.channel.send(
- //       `I could not find that channel in the guild!`
-//      );
+    if (isNaN(args[0][0])) return message.channel.send(`That is not a number!`);
+    let channel = message.mentions.channels.first();
+    if (!channel)
+    return message.channel.send(
+        `I could not find that channel in the guild!`
+      );
     let prize = args.slice(2).join(" ");
     if (!prize) return message.channel.send(`No prize specified!`);
     message.channel.send(`🎉**|Giveaway created in** ${channel}`);
