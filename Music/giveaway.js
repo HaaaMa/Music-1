@@ -7,7 +7,7 @@ module.exports = {
   usage: "<time> <winner> <prize>",
   category: "fun",
   async execute(message, args) {
-    if (!args[0]) return message.channel.send(`Set time  ex: 1d / 12h`);
+    if (!args[0]) return message.channel.send(`\`Set Time\` ex: 1d / 12h`);
     if (
       !args[0].endsWith("d") &&
       !args[0].endsWith("h") &&
