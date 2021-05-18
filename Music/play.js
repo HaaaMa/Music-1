@@ -168,7 +168,7 @@ ${PREFIX}leave  -  ${PREFIX}filter  -  ${PREFIX}radio`))
       serverQueue.songs.push(song);
       //the new song embed
       const newsong = new MessageEmbed()
-        .setTitle("<:Youtube:813453040929210379>:" + song.title)
+        .setTitle("🎶" + song.title)
         .setColor("#FC00FF")
         .setThumbnail(thumb)
         .setURL(song.url)
