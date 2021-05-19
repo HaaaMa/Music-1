@@ -9,7 +9,7 @@ const client = new Client({ disableMentions: `` , partials: ['MESSAGE', 'CHANNEL
 client.login('ODE0NjA4NzA3NDEyMjk1Nzgw.YDgVeg.Bnj0wOz4yLrbpnAFaLaNCRkukio');
 client.commands = new Collection();
 client.setMaxListeners(0);
-client.prefix = PREFIX;
+client.prefix = PREFIX
 client.queue = new Map();
 const cooldowns = new Collection();
 const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
