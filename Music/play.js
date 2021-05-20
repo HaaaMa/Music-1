@@ -1,7 +1,7 @@
 ////////////////////////////
 //////CONFIG LOAD///////////
 ////////////////////////////
-const { play } = require("../include/play");
+cons { play } = require("../include/play");
 const { Client, Collection, MessageEmbed } = require("discord.js");
 const { attentionembed } = require("../util/attentionembed");
 const { PREFIX } = require(`../config.json`);
