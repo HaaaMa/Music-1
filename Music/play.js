@@ -69,7 +69,9 @@ async execute(message, args, client) {
         if (urlValid) { //send searching link
           message.channel.send(new MessageEmbed().setColor("#146DF6")
             .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-            .setDescription(`<a:links:813729922643263558> \`Searching\` 🔍  [𝗟𝗜𝗡𝗞](${args.join(" ")})`))
+            .setDescription(`**__Much Need__**
+${PREFIX}skip  -  ${PREFIX}volume  -  ${PREFIX}loop
+${PREFIX}leave  -  ${PREFIX}filter  -  ${PREFIX}radio `))
         //if not
         }
         else { //send searching TITLE
@@ -91,7 +93,9 @@ ${PREFIX}leave  -  ${PREFIX}filter  -  ${PREFIX}radio `))
         if (urlValid) { //send searching link
           message.channel.send(new MessageEmbed().setColor("#146DF6")
             .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-            .setDescription(`<a:links:813729922643263558> \`Searching\` 🔍 [𝗟𝗜𝗡𝗞](${args.join(" ")})`))
+            .setDescription(`**__Much Need__**
+${PREFIX}skip  -  ${PREFIX}volume  -  ${PREFIX}loop
+${PREFIX}leave  -  ${PREFIX}filter  -  ${PREFIX}radio `))
           //if not
         }
         else { //send searching TITLE
