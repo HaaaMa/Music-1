@@ -9,7 +9,7 @@ module.exports = {
  async canModifyQueue(member) {
     //define the EMBED
     let resultsEmbed = new MessageEmbed()
-      .setTitle("❗️ | You must be in the Same Voice Channel as me!")
+      .setTitle("❗️ | You need join voice to request this command")
       .setColor("#ff0e7a")
     //wenn memberchannel nicht der botchannel ist
     if (member.voice.channel !== member.guild.me.voice.channel) {
