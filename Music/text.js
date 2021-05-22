@@ -1,20 +1,15 @@
-const ytsr = require("youtube-sr")
-const { Client, Collection, MessageEmbed } = require("discord.js");
-const { play } = require("../include/play")
-const { attentionembed } = require("../util/attentionembed");
-const { PREFIX, } = require(`../config.json`);
-////////////////////////////
-//////COMMAND BEGIN/////////
-////////////////////////////
+const { MessageEmbed } = require("discord.js");
+
+const Color = `#FF0000`;
+
+
 module.exports = {
-  name: "text",
-  description: "(fi)Set Audio - Effects",
-  aliases: ["tex"],
-  cooldown: 5,
-  edesc: `Type this Command to change the current audio effect - style \nUsage: ${PREFIX}filter <Filtertype>`,
 
-async execute(client, args, client) {
-
+  name: "avatar",
+  aliases: ["A"],
+description: " ``` Avatar @user```",
+  category: "fun",
+execute(client, message, args)  => {
 /// starts
 
 message.delete();
