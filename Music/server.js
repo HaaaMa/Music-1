@@ -1,4 +1,19 @@
-const Discord = require('discord.js');
+const Discord = module.require("discord.js");
+
+module.exports = {
+   name: "unlock",
+   aliases: ["ul"],
+   description: "Unlocks a Channel",
+   async execute(message, args) {
+   if (!message.member.hasPermission('MANAGE_SERVER', 'MANAGE_CHANNELS')) {
+   return message.channel.send("You don't have enough Permissions")
+   }
+   message.channel.overwritePermissions([
+     {
+        id: message.guild.id,
+        null : ['SEND_MESSAGES'],
+     },
+    ],);
 
 exports.run = (client, message) => {
 
@@ -23,16 +38,3 @@ let sunucu = new Discord.MessageEmbed()
 return message.channel.send(sunucu) 
 
 }; 
-
-module.exports.conf = {
-aliases: ["server","sr","s-r"],
-permLevel: 0, 
-enabled: true,
-guildOnly: true
-};
-
-module.exports.help = {
-name: 'server',
-  description: 'rexuss',
-usage: 'server'
-};
