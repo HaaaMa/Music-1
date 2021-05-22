@@ -1,18 +1,15 @@
+const Discord = require("discord.js");
 const { MessageEmbed } = require("discord.js");
-
-const Color = `#FF0000`;
-
+const { Color } = require("../config.js");
 
 module.exports = {
-
-  name: "texy",
-  aliases: ["Tex"],
-description: " ``` Avatar @user```",
-  category: "fun",
-execute(client, message, args)  => {
-/// starts
-
-message.delete();
+  name: "text",
+  aliases: ["text", "pp", "ppsize"],
+  description: "Show Member PP Size!",
+  usage: "Dicksize <Mention Member>",
+  run: async (client, message, args) => {
+    //Start
+    message.delete();
     let sizes = [
       "kurd",
       "roshek",
@@ -51,5 +48,3 @@ message.delete();
     message.channel.send(embed);
 
     //End
-  }
-};
