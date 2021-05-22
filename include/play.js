@@ -144,7 +144,7 @@ module.exports = {
         .addField("Time ⏱ :", `\`${song.duration} Minutes 🖇\``, true)
         .addField("Voice Channel 📣 :",channel.name)
         .addField("Text Channel 🗯️ :",message.channel.name)
-        .addField("Voulome ❄️ :",100)
+        .addField("Voulome ❄️ :",50)
         .setURL(song.url)
         .setColor("#146DF6")
         .setThumbnail(thumb)
@@ -295,7 +295,7 @@ module.exports = {
         const left = ms - seek;
         //define embed
         let nowPlaying = new MessageEmbed()
-          .setAuthor('<a:waya:813455060864073788> Now playing')
+          .setAuthor('🈁 Now playing')
           .setDescription(`[${song.title}](${song.url})`)
           .setThumbnail(song.thumbnail.url)
           .setColor("#146DF6")
