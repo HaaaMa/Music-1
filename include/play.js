@@ -1,7 +1,7 @@
 ////////////////////////////
 //////CONFIG LOAD///////////
 ////////////////////////////
-const ytdl = require("discord-ytdl-core");
+const ytdl = require(discord-ytdl-core");
 const { canModifyQueue } = require("../util/MilratoUtil");
 const { Client, Collection, MessageEmbed, splitMessage, escapeMarkdown,MessageAttachment } = require("discord.js");
 const { attentionembed } = require("../util/attentionembed");
