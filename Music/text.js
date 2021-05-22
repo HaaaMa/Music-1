@@ -5,8 +5,8 @@ const Color = `#FF0000`;
 
 module.exports = {
 
-  name: "avatar",
-  aliases: ["A"],
+  name: "texy",
+  aliases: ["Tex"],
 description: " ``` Avatar @user```",
   category: "fun",
 execute(client, message, args)  => {
