@@ -53,7 +53,7 @@ async execute(message, args, client) {
       connection: null,
       songs: [],
       loop: false,
-      volume: 69,
+      volume: 50,
       filters: [],
       realseek: 0,
       playing: true
