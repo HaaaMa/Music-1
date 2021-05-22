@@ -153,14 +153,14 @@ module.exports = {
         await playingMessage.react("🔉");
         await playingMessage.react("🔊");
         await playingMessage.react("🔇");
-        await playingMessage.react("🔁");
+        await playingMessage.react("🔄");
         await playingMessage.react("⏭");
  //     await playingMessage.react("⏯");
    //   await playingMessage.react("🔀");
   //    await playingMessage.react("⏹");
   //    await playingMessage.react("🎵");
     //  await playingMessage.react("🎶");
-        await playingMessage.react("📑");
+  //    await playingMessage.react("📑");
     } catch (error) {
       console.error(error);
     }
@@ -234,7 +234,7 @@ module.exports = {
             .catch(console.error);
           break;
 
-        case "🔁":
+        case "🔄":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           queue.loop = !queue.loop;
