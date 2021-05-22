@@ -1,6 +1,7 @@
-const Discord = require("discord.js");
-const { MessageEmbed } = require("discord.js");
-const { Color } = require("../config.js");
+const { canModifyQueue } = require("../util/MilratoUtil");
+const { Client, Collection, MessageEmbed } = require("discord.js");
+const { attentionembed } = require("../util/attentionembed");
+const { PREFIX } = require(`../config.json`);
 
 module.exports = {
   name: "text",
