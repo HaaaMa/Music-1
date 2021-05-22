@@ -13,7 +13,7 @@ module.exports = {
   cooldown: 5,
   edesc: `Type this Command to change the current audio effect - style \nUsage: ${PREFIX}filter <Filtertype>`,
 
-async execute(message, args, client) {
+async execute(client, args, client) {
 
 /// starts
 
