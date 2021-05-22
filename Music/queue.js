@@ -29,7 +29,7 @@ module.exports = {
     }
     //define queueembed
     let queueEmbed = new MessageEmbed()
-      .setAuthor("<a:stop:813505072704913419> Music Queue")
+      .setAuthor("Music Queue")
       .setDescription(description)
       .setColor("#146DF6");
     //split the description
