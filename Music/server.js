@@ -1,8 +1,8 @@
 const Discord = module.require("discord.js");
 
 module.exports = {
-   name: "unlock",
-   aliases: ["ul"],
+   name: "server",
+   aliases: ["server"],
    description: "Unlocks a Channel",
    async execute(message, args) {
    if (!message.member.hasPermission('MANAGE_SERVER', 'MANAGE_CHANNELS')) {
