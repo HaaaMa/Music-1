@@ -1,6 +1,6 @@
 const { Client, Collection, MessageEmbed } = require(`discord.js`);
 const { 
- , 
+ PREFIX, 
 } = require(`../config.json`);
 
   
