@@ -34,7 +34,7 @@ execute(message) {
     //send approve message
     queue.textChannel.send(
       new MessageEmbed().setColor("#146DF6") 
-//.setAuthor(`${message.author.username} skipped the song.`, "https://cdn.discordapp.com/emojis/769915194444480542.png"))
+.setAuthor(`${message.author.username} skipped the song.`, "https://cdn.discordapp.com/emojis/769915194444480542.png"))
 .catch(console.error);
   }
 };
