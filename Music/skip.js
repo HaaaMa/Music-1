@@ -19,7 +19,7 @@ execute(message) {
     //if not in a guild retunr
     if (!message.guild) return;
     //react with approve emoji
-    message.react("<:emoji_4:815583574983966720>").catch(console.error);
+    message.react("✅").catch(console.error);
     //get the queue
     const queue = message.client.queue.get(message.guild.id);
     //if no Queue return error
@@ -33,7 +33,7 @@ execute(message) {
     queue.connection.dispatcher.end();
     //send approve message
     queue.textChannel.send(
-      new MessageEmbed().setColor("#146DF6").setAuthor(`${message.author.username} skipped the song.`, "https://cdn.discordapp.com/emojis/769915194444480542.png")
-    ).catch(console.error);
+      new MessageEmbed().setColor("#146DF6") 
+//.setAuthor(`${message.author.username} skipped the song.`, "https://cdn.discordapp.com/emojis/769915194444480542.png")).catch(console.error);
   }
 };
