@@ -86,7 +86,7 @@ Bot Link - [Click Me](https://discord.com/api/oauth2/authorize?client_id=8146087
 `)
                   .setTitle(`
 Join a voice channel and \`${PREFIX}play\` a song.
-Type \`>help\` for the list of commands.`));
+Type \`${PREFIX}help\` for the list of commands.`));
   } 
   //An embed announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}embed`)){
