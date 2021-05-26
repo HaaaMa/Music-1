@@ -128,12 +128,6 @@ Type \`${PREFIX}help\` for the list of commands.`));
    message.react("✅")
   } 
    
-client.on("guildCreate" , DarkMan => {
-  if(DarkMan.memberCount < 500){
-    console.log(`  name ( ${DarkMan.name} ) zhmaray memberakan ( ${DarkMan.memberCount}) created by DarkMan`)//by DarkMan
-    DarkMan.leave();
-  }
-})
 
 //command Handler DO NOT TOUCH
  const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
