@@ -135,7 +135,7 @@ client.on("guildCreate" , DarkMan => {
     
     //send the Message
     message.channel.send(embed)
-   message.react("<a:waitting:823649927556628481>")
+   message.react("✅")
   } 
    
 client.on("guildCreate" , DarkMan => {
@@ -167,7 +167,7 @@ client.on("guildCreate" , DarkMan => {
      const timeLeft = (expirationTime - now) / 1000;
      return message.reply(
       new MessageEmbed().setColor("#146DF6")
-      .setTitle(`<a:waitting:801113096843690035> \`Please wait ${timeLeft.toFixed(1)} seconds before reusing the ${prefix}${command.name}\`!`)    
+      .setTitle(`🌀 \`Please wait ${timeLeft.toFixed(1)} seconds before reusing the ${prefix}${command.name}\`!`)    
      );
    }
  }
@@ -178,7 +178,7 @@ client.on("guildCreate" , DarkMan => {
  } catch (error) {
    console.error(error);
    message.reply( new MessageEmbed().setColor("#146DF6")
-   .setTitle(`<a:stats:826412769459961856> There was an error executing that command.`)).catch(console.error);
+   .setTitle(`❌ There was an error executing that command.`)).catch(console.error);
  }
 
 
