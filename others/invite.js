@@ -16,7 +16,7 @@ module.exports = {
     message.react("✅");
     //send the invite embed
     message.reply(new MessageEmbed().setColor("#146DF6").setTitle("Remix Bot Invite ✨").setDescription("✔️**[Click Here](https://discord.com/api/oauth2/authorize?client_id=814608707412295780&permissions=8&scope=bot) to invite the bot.**")
-   .setImage("https://media.discordapp.net/attachments/790836700561670145/838769104718266381/image0.gif");
+   .setImage("https://media.discordapp.net/attachments/790836700561670145/838769104718266381/image0.gif")
    .setFooter(""));
   }
 }
