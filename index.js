@@ -6,7 +6,7 @@ const db = require('quick.db');
 const { TOKEN, PREFIX, AVATARURL, BOTNAME, } = require(`./config.json`);
 const figlet = require("figlet");
 const client = new Client({ disableMentions: `` , partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
-client.login('ODE0NjA4NzA3NDEyMjk1Nzgw.YDgVeg.Wc6NdD5HO7k6Y3FrsrJItEXox6E');
+client.login('ODE0NjA4NzA3NDEyMjk1Nzgw.YDgVeg.vHkZi2gZX_-NHeNUEWbNPVrRvpk');
 client.commands = new Collection();
 client.setMaxListeners(0);
 client.prefix = PREFIX;
@@ -169,7 +169,7 @@ Type \`${PREFIX}help\` for the list of commands.`));
 });
 
 client.on("guildCreate", guild => {
-  let channel = client.channels.cache.get("");
+  let channel = client.channels.cache.get("831707934525489172");
   let embed = new MessageEmbed().setColor("#146DF6")
   .setAuthor(client.user.username, client.user.avatarURL())
   .setTitle( `✅ Join Server`)
