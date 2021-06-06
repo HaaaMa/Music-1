@@ -37,7 +37,7 @@ module.exports = {
 \`${PREFIX}unban\`   **-**   \`${PREFIX}slowmode\`
 
 **Links**
-[support](https://discord.gg/VWuQfQfjc9)    -    [invite](https://discord.com/api/oauth2/authorize?client_id=814608707412295780&permissions=8&scope=bot)    -    [vote](https://top.gg/bot/814608707412295780)`)
+[support](https://discord.gg/VWuQfQfjc9)    -    [invite](https://discord.com/api/oauth2/authorize?client_id=814608707412295780&permissions=8&scope=bot)`)
 
  //  .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setColor("RANDOM");
