@@ -32,7 +32,7 @@ module.exports = {
                 .setThumbnail(message.author.avatarURL({dynamic: "true"}))
                 .setDescription(`Information on Invites of ${member.displayName}`)
                 .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-                .addField("**No. Invited Persons**", index)
+                .addField("**invite Number**", index)
                 .addField("Invitation Codes\n\n", content);
             message.channel.send(embed);
         } catch (e) {
