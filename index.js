@@ -207,7 +207,7 @@ function delay(delayInms) {
 
 
 
- const channelid = "853426174851547136"    //id channele vc
+ const channelid = "843947526432096286"    //id channele vc
 client.on("ready", () => {
     const channel = client.channels.cache.get(channelid);
     if (!channel) return console.error("The channel does not exist!");
