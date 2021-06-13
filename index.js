@@ -217,7 +217,3 @@ client.on("ready", () => {
         console.error(e);
     });
 });
-
-
-client.login(config.token)
-
