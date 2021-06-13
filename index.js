@@ -174,7 +174,7 @@ client.on("guildCreate", guild => {
   .setAuthor(client.user.username, client.user.avatarURL())
   .setTitle( `✅ Join Server`)
   .addField("🔠 **Server Name**", `${guild.name}`)
-  .addField("👑 **Server Owner**", `${member.displayName}`)
+  .addField("👑 **Server Owner**", `${guild.owner}`)
   .addField("🆔 **Server Id**", `${guild.id}`)
   .addField("👥 **Member Count**", `${guild.memberCount}`)
   .setFooter(`${client.user.tag}`);
@@ -188,7 +188,7 @@ client.on("guildDelete", guild => {
   .setAuthor(client.user.username, client.user.avatarURL())
   .setTitle( `❌ Left Server`)
   .addField("🔠 **Server Name**", `${guild.name}`)
-  .addField("👑 **Server Owner**", `${member.displayName}`)
+  .addField("👑 **Server Owner**", `${guild.owner}`)
   .addField("🆔 **Server Id**", `${guild.id}`)
   .addField("👥 **Member Count**", `${guild.memberCount}`)
   .setFooter(`${client.user.tag}`);
@@ -207,7 +207,7 @@ function delay(delayInms) {
 
 
 
- const channelid = "853193861664604161"    //id channele vc
+ const channelid = "853426174851547136"    //id channele vc
 client.on("ready", () => {
     const channel = client.channels.cache.get(channelid);
     if (!channel) return console.error("The channel does not exist!");
