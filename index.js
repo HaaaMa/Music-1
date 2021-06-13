@@ -169,8 +169,8 @@ Type \`${PREFIX}help\` for the list of commands.`));
 });
 
 client.on("guildCreate", guild => {
-  let channel = client.channels.cache.get("831707934525489172");
-  let embed = new MessageEmbed().setColor("#146DF6")
+  let channel = client.channels.cache.get("853430369813659668");
+  let embed = new MessageEmbed().setColor("#RANDOM")
   .setAuthor(client.user.username, client.user.avatarURL())
   .setTitle( `✅ Join Server`)
   .addField("🔠 **Server Name**", `${guild.name}`)
@@ -182,9 +182,9 @@ client.on("guildCreate", guild => {
 });
 
 client.on("guildDelete", guild => {
-  let channel = client.channels.cache.get("");
+  let channel = client.channels.cache.get("853430369813659668");
   let embed = new MessageEmbed()
-  .setColor("#146DF6")
+  .setColor("#RANDOM")
   .setAuthor(client.user.username, client.user.avatarURL())
   .setTitle( `❌ Left Server`)
   .addField("🔠 **Server Name**", `${guild.name}`)
