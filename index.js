@@ -1,4 +1,4 @@
-const Discord = require(`discord.js`);
+nst Discord = require(`discord.js`);
 const { Client, Collection, MessageEmbed,MessageAttachment } = require(`discord.js`);
 const { readdirSync } = require(`fs`);
 const { join } = require(`path`);
