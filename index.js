@@ -217,3 +217,14 @@ client.on("ready", () => {
         console.error(e);
     });
 });
+
+
+client.on("message", message => {
+  if (message.channel.id === "831754157458587648") {
+    message.react("🤍").then(() => {
+      message.react("🖤");
+      message.react("<a:emoji_5:791253013678784571>");
+      
+    });
+  }
+});
