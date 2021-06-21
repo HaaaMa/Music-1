@@ -9,6 +9,8 @@ const { PREFIX } = require(`../config.json`);
 
 const chooseArr = ["🗻", "📰", "✂"];
 
+execute(bot, message, args) {
+
 module.exports = {
   name: "rockpapersezar",
   aliases: ["rps"],
@@ -16,11 +18,10 @@ module.exports = {
   cooldown: 5,
   edesc: `Type the Command, if a Queue exists to change to Order of the Queue, randomly.\nUsage: ${PREFIX}shuffle`,
 
-execute(message,args,client) {
 
 try
       {     const embed = new MessageEmbed()
-            .setColor("GREEN")
+            .setColor("RANDOM")
             .setAuthor(message.member.displayName, message.author.displayAvatarURL())
             .setFooter(message.guild.me.displayName, bot.user.displayAvatarURL())
             .setDescription("**Play A Game of RPS Against The Bot!\nSelect Reactions To Play!**")
