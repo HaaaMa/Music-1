@@ -228,3 +228,86 @@ client.on("message", message => {
     });
   }
 });
+
+
+
+
+
+
+
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+
+
+const prefix = "1";
+
+haaama.login("ODM5MjY0ODA2Nzc5MDkzMDAz.YJHIQg.zA9L4VkVzZFqbVKZTbWJya4b4Xo")
+
+
+
+
+const haaamaenabled  = "";
+const haaamadisabled = "";
+const haaamafalse    = "";
+const haaamatrue     = "";
+const haaamacolor    = "RANDOM";
+const haaamaimgae    = "";
+const haaamaban      = "";                                                                                                                                                                             const securitybots = "Anti Vandalism#6064";
+const haaamawarn     = "";                                                                                                                                                                             const haaamadevelopers = "731952429238714378"; const haaamaowner = "731952429238714378";
+///////////////////////////////////////////////////////////////////////////////
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+haaama.on("message", async message => {
+  if (message.content.startsWith(prefix + "help")) {
+    if (cooldown.has(message.author.id)) {
+      return message.channel.send(`You have to wait 5 seconds`).then(m => {
+        m.delete({ timeout: cdtime * 600 });
+      });
+    }
+    cooldown.add(message.author.id);
+    setTimeout(() => {
+      cooldown.delete(message.author.id);
+    }, cdtime * 1000);
+    let help = new Discord.MessageEmbed()
+      .setColor(haaamacolor)
+      .setThumbnail(message.member.user.displayAvatarURL({ dynamic: true }))
+      .setDescription(`
+**Info Commands**
+\`${prefix}botinfo\`
+\`${prefix}userinfo\`
+\`${prefix}serverinfo\`
+\`${prefix}invite\`
+\`${prefix}owner\`
+**Moderation Commands**
+\`${prefix}lock\`
+\`${prefix}unlock\`
+\`${prefix}ban\` : @User
+\`${prefix}kick\` : @User
+\`${prefix}unban\` : Id/all
+**Security Number**
+\`${prefix}anti kick\`: **Number**
+\`${prefix}anti ban\`: **Number**
+\`${prefix}anti channelD\`: **Number**
+\`${prefix}anti channelC\`: **Number**
+\`${prefix}anti roleD\`: **Number**
+\`${prefix}anti roleC\`: **Number**
+**Security On/Off**
+\`${prefix}anti bot\`: **on-off**
+**Security**
+\`${prefix}settings\`
+\`${prefix}punishment\`
+**Links**
+[Support](https://discord.gg/DUN8TFzCpS) - [Invite](https://discord.com/api/oauth2/authorize?client_id=${haaama.user.id}&permissions=8&scope=bot)
+      
+      
+      `);
+    message.channel.send(help);
+  }
+});
+
+
+
+
