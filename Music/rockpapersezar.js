@@ -1,4 +1,7 @@
-
+const createBar = require("string-progressbar");
+const { Client, Collection, MessageEmbed } = require("discord.js");
+const { attentionembed } = require("../util/attentionembed");
+const { PREFIX } = require(`../config.json`);
 const { MessageEmbed } = require("discord.js");
 const { promptMessage } = require("../../functions");
 
