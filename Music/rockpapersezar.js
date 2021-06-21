@@ -1,23 +1,24 @@
-const createBar = require("string-progressbar");
+const { promptMessage } = require("../../functions");
 const { Client, Collection, MessageEmbed } = require("discord.js");
 const { attentionembed } = require("../util/attentionembed");
 const { PREFIX } = require(`../config.json`);
-const { MessageEmbed } = require("discord.js");
-const { promptMessage } = require("../../functions");
+
+////////////////////////////
+//////COMMAND BEGIN/////////
+////////////////////////////
 
 const chooseArr = ["🗻", "📰", "✂"];
 
 module.exports = {
-    config: {
-        name: "rps",
-        category: "games",
-        aliases: ['rockpaperscissors'],
-        description: "Rock Paper Scissors Game. React to one of the emojis to play the game.",
-        usage: " ",
-        accessableby: "everyone"
-    },
-    run: async (bot, message, args) => {
-      try
+  name: "rockpapersezar",
+  aliases: ["rps"],
+  description: "(mix)Shuffles the current Queue!",
+  cooldown: 5,
+  edesc: `Type the Command, if a Queue exists to change to Order of the Queue, randomly.\nUsage: ${PREFIX}shuffle`,
+
+execute(message,args,client) {
+
+try
       {     const embed = new MessageEmbed()
             .setColor("GREEN")
             .setAuthor(message.member.displayName, message.author.displayAvatarURL())
@@ -57,4 +58,4 @@ module.exports = {
 
     }
 }
- 
+
