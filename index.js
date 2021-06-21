@@ -6,10 +6,13 @@ const db = require('quick.db');
 const { TOKEN, PREFIX, AVATARURL, BOTNAME, } = require(`./config.json`);
 const figlet = require("figlet");
 const client = new Client({ disableMentions: `` , partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
-client.login('ODE0NjA4NzA3NDEyMjk1Nzgw.YDgVeg.jPg5_S0aBshO8IbBMnQxY-bO1kg');
+
+const prefix = "1";
+
+haaama.login("ODM5MjY0ODA2Nzc5MDkzMDAz.YJHIQg.zA9L4VkVzZFqbVKZTbWJya4b4Xo")
+
 client.commands = new Collection();
 client.setMaxListeners(0);
-client.prefix = PREFIX;
 client.queue = new Map();
 const cooldowns = new Collection();
 const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
@@ -237,11 +240,6 @@ client.on("message", message => {
 
 ///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
-
-
-const prefix = "1";
-
-haaama.login("ODM5MjY0ODA2Nzc5MDkzMDAz.YJHIQg.zA9L4VkVzZFqbVKZTbWJya4b4Xo")
 
 
 
