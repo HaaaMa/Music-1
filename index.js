@@ -37,7 +37,7 @@ const dateFormat = require("dateformat");
 var table = require("table").table;
 const Discord = require("discord.js");
 const cmd = require("node-cmd");
-const prefix = "1";        //// Prefix Boot
+const prefix = ">";        //// Prefix Boot
 const cooldown = new Set();
 const cdtime = 5;
 ///////////////////////////////////////////////////////////////////////////////
@@ -65,7 +65,7 @@ haaama.on("message", message => {
   }
 });
 ///////////////////////////////////////////////////////////////////////////////
-haaama.login("ODM5MjY0ODA2Nzc5MDkzMDAz.YJHIQg.zA9L4VkVzZFqbVKZTbWJya4b4Xo")
+haaama.login("ODE0NjA4NzA3NDEyMjk1Nzgw.YDgVeg.jPg5_S0aBshO8IbBMnQxY-bO1kg")
 ///////////////////////////////////////////////////////////////////////////////
 const haaamaenabled  = "";
 const haaamadisabled = "";
