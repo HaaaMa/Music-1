@@ -10,7 +10,7 @@ module.exports = {
   name: "help",
   aliases: ["h"],
   cooldown: 8,
-  description: "**Remix Help**",
+  description: "**oPoRo Help**",
   execute(message) {
     let commands = message.client.commands.array();
 
@@ -21,7 +21,7 @@ module.exports = {
     .setDescription(`
 
 **User Commands**
-\`${PREFIX}support\`   **-**   \`${PREFIX}ping\`   **-**   \`${PREFIX}avatar\`
+\`${PREFIX}ping\`   **-**   \`${PREFIX}avatar\`
 \`${PREFIX}prefix\`   **-**   \`${PREFIX}uptime\`   **-**   \`${PREFIX}invite\`
 \`${PREFIX}se (emoji)\`   **-**   \`${PREFIX}invites\`
 
@@ -33,8 +33,8 @@ module.exports = {
 \`${PREFIX}radio\`   **-**   \`${PREFIX}search\`   **-**   \`${PREFIX}shuffle\`
 
 **Moderation Commands**
-\`${PREFIX}lock\`  **-**  \`${PREFIX}unlock\`   **-**   \`${PREFIX}ban\`
-\`${PREFIX}unban\`   **-**   \`${PREFIX}slowmode\`
+\`${PREFIX}lock\`  **-**  \`${PREFIX}unlock\`  
+\`${PREFIX}slowmode\`
 
 **Links**
 [support](https://discord.gg/VWuQfQfjc9)    -    [invite](https://discord.com/api/oauth2/authorize?client_id=814608707412295780&permissions=8&scope=bot)`)
